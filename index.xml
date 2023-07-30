@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seyee&#39;s Blog</title>
+    <link>/</link>
+    <description>Recent content on Seyee&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>什么才是真正学会了？</title>
+    <link>/post/learning/</link>
+    <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+    
+    <guid>/post/learning/</guid>
+    <description>
+        &lt;p&gt;git 的历史 commit 怎么修改这个问题好像已经搜过好几次了，但是之前都没有成功。上次成功删除过某次提交后，这次再搜相关的文章，就看得懂别人的教程了，也成功了。&lt;/p&gt;
+&lt;p&gt;联想到李笑来的前置引用概念：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;绝大多数难以理解的知识，是因为它内部有很多 “前置引用”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所谓的前置引用，就是一个在后面才能深入理解的概念竟然在此之前已经被引用了，导致的结果是学习者总是处于懵懂的状态。学校里的知识却不是这样的，学校里的知识总是线性层层递进的，理解了前面，就能理解后面…… 关于 “前置引用”，你可以参阅我在《自学是门手艺》里的阐述。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记里就记下了让 GPT 给我解释的几个命令，主要是用来下次不记得这个单词了可以快速找到。&lt;/p&gt;
+&lt;p&gt;笔记圈里特别爱讨论的一个问题就是为什么要做笔记？其实现在回顾确实很多笔记是在骗自己，如果当时没有理解记下来的东西，事后也不会想起来自己记过这个东西。而真正理解了，好像也没有记下来的必要了，这算不算是一个笔记的悖论。&lt;/p&gt;
+&lt;p&gt;但是我还是觉得记笔记是有好处的，只是形式和以前不一样了，比起大段大段的复制粘贴，更重要的是关键词，自己遇到的问题，下次再遇到的时候需要用什么关键词快速找到答案，建立起一个个锚点。&lt;/p&gt;
+&lt;p&gt;所以搜索技能和知识管理软件的搜索体验真的无比重要了。&lt;/p&gt;
+&lt;p&gt;回到标题，我觉得答案是，你真正用起来了，在你生活里起到了作用，才算是学会了。&lt;/p&gt;
+&lt;p&gt;（ps，还是不喜欢 notion 的码字体验，找时间还是看看有没有什么 markdown 部署的博客方案）&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>为什么写博客</title>
+    <link>/post/why_blog/</link>
+    <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+    
+    <guid>/post/why_blog/</guid>
+    <description>
+        &lt;p&gt;今天又逛到一个很有意思的博客，已经数不清第几次有这种感慨了：这个博客真有意思。所以很自然的会想要不要自己也建一个呢。
+做为一个摩羯座，天生会对“干货有用”的东西感兴趣，但是往往更打动我的，是一些能展露作者感性层面的东西：价值观、情绪、喜恶。&lt;/p&gt;
+&lt;p&gt;提到情绪。同样会因为星座有困惑，为什么我一个群摩羯会有这么多细腻的情绪。所以第一点，写博客最主要是为了记录和观察自己。偶尔回看自己以前写的东西挺好玩的，有一些没什么用的废话，也有一些会让人哇，原来我写过这么有道理的东西，怎么好像现在的心境还不如当时呢？&lt;/p&gt;
+&lt;p&gt;第二点是比较爱折腾效率工具，有时候会觉得这个爱好无意义，但是喜欢，无意义就无意义吧。以前很爱跟人安利自己喜欢的工具，时间长了发现每个人的需求都不一样，按头安利也是一种压力，所以还不如自说自话，随意分享一下就好。&lt;/p&gt;
+&lt;p&gt;虽然近几年的 mbti 测试结果我都是 i 人，而且今年似乎越来越 i 了，对社交毫无兴趣，不关心大多数具体的人。但是人总是一种奇怪的生物，总会有存在感的需求，文字是一种很好的自我表达的载体，比起声带交流，也是我更擅长的方式。&lt;/p&gt;
+
+    </description>
+    </item>
+    
+  </channel>
+</rss>
