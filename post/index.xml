@@ -105,5 +105,15 @@ cubox 在移动端特别是公众号场景确实很方便，还有稍后读的�
 GN.</description>
     </item>
     
+    <item>
+      <title>star list</title>
+      <link>/post/like_list/</link>
+      <pubDate>Sun, 01 Jan 1995 00:00:00 +0000</pubDate>
+      
+      <guid>/post/like_list/</guid>
+      <description> 放一些我喜欢的东西
+《“最后镀得金光”》 </description>
+    </item>
+    
   </channel>
 </rss>

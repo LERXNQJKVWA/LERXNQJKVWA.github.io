@@ -304,5 +304,22 @@
     </description>
     </item>
     
+    <item>
+    <title>star list</title>
+    <link>/post/like_list/</link>
+    <pubDate>Sun, 01 Jan 1995 00:00:00 +0000</pubDate>
+    
+    <guid>/post/like_list/</guid>
+    <description>
+        &lt;blockquote&gt;
+&lt;p&gt;放一些我喜欢的东西&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzI2MjMwNzMxNQ==&amp;amp;mid=2247484865&amp;amp;idx=1&amp;amp;sn=02f477f3cf08dd397f531b76e534596b&amp;amp;chksm=ea4c695ddd3be04b8734d4ed5f534688fb5a6a50e0b4e388b12e9b8d77e126fa2f7a994a3b7e&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1124r7JmsbV3La8lAGCqtspL&amp;amp;sharer_sharetime=1669360547052&amp;amp;sharer_shareid=9b0f81234468a25985e49fa570d9560c#rd&#34;&gt;《“最后镀得金光”》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    </description>
+    </item>
+    
   </channel>
 </rss>
