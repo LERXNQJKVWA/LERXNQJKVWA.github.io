@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="dark" />
   
-  <title>一些碎碎念 | Seyee&#39;s Blog</title>
+  <title>在 workflowy 中显示 bilibili 预览的油猴脚本 | Seyee&#39;s Blog</title>
   <meta name="keywords" content="Seyee,blog,博客" />
   <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
   <meta name="author" content="Seyee" />
@@ -102,17 +102,21 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>一些碎碎念</h1>
+                    <h1>在 workflowy 中显示 bilibili 预览的油猴脚本</h1>
                     <div class="post-meta">
                         <div>
                             
                             
-                              
-                            
-                            By  | <time>2023-08-02</time>
+                            By workflowy群友：KitLeung | <time>2023-08-02</time>
                             | 1 minutes
                         </div>
                         <div class="tags">
+                            
+                            <a href="/tags/workflowy/">workflowy</a>
+                            
+                            <a href="/tags/workflowy%E6%8F%92%E4%BB%B6/">workflowy插件</a>
+                            
+                            <a href="/tags/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/">油猴脚本</a>
                             
                         </div>
                     </div>
@@ -122,11 +126,44 @@
     </article>
 
     <div class="article-post">
-    <blockquote>
-<p>2023-08-02 14:15</p>
-<p>最近用 obsidian 真的好快乐</p>
-</blockquote>
+    <pre tabindex="0"><code>// ==UserScript==
+// @name         Workflowy Figma Embed
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Embed Figma files in Workflowy
+// @author       You
+// @match        https://workflowy.com/*
+// @grant        none
+// ==/UserScript==
 
+(function() {
+    &#39;use strict&#39;;
+
+    const figmaFormat = {
+        regex: /https?:\/\/(www\.)?figma\.com\/(file|proto)\/([0-9a-zA-Z]+)(\/.*)?/i,
+        embed: &#39;https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2F$2%2F$3&#39;
+    };
+
+    const checkForEmbeds = () =&gt; {
+        document.querySelectorAll(&#39;a:not([data-processed])&#39;).forEach(a =&gt; {
+            const url = a.href;
+            const match = url.match(figmaFormat.regex);
+            if (match) {
+                const embedUrl = url.replace(figmaFormat.regex, figmaFormat.embed);
+                const iframe = document.createElement(&#39;iframe&#39;);
+                iframe.src = embedUrl;
+                iframe.width = 800;
+                iframe.height = 600;
+                iframe.style.border = &#39;1px solid rgba(0, 0, 0, 0.1)&#39;;
+                a.parentElement.insertBefore(iframe, a.nextSibling);
+                a.setAttribute(&#39;data-processed&#39;, true);
+            }
+        });
+    };
+
+    setInterval(checkForEmbeds, 500);
+})();
+</code></pre>
     </div>
 </div>
 
@@ -134,12 +171,17 @@
     
     <nav class="flex container suggested">
         
-        <a rel="prev" href="/post/workflowy_bill_figma/" title="Previous post (older)">
+        <a rel="prev" href="/post/learning/" title="Previous post (older)">
             <span>Previous</span>
-            在 workflowy 中显示 bilibili 和 Figma 预览的油猴脚本
+            什么才是真正学会了？
             </a>
         
         
+        
+        <a rel="next" href="/post/workflowy_bill_figma/" title="Next post (newer)">
+            <span>Next</span>
+            在 workflowy 中显示 bilibili 和 Figma 预览的油猴脚本
+            </a> 
         
     </nav>
     

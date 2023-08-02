@@ -18,6 +18,24 @@
     </item>
     
     <item>
+      <title>在 workflowy 中显示 bilibili 和 Figma 预览的油猴脚本</title>
+      <link>/post/workflowy_bill_figma/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/workflowy_bill_figma/</guid>
+      <description>// ==UserScript==// @name Workflowy Bilibili and Figma Embed// @namespace http://tampermonkey.net/// @version 0.1// @description Embed Bilibili videos and Figma files in Workflowy// @author You// @match https://workflowy.com/*// @grant none// ==/UserScript==(function() {&amp;#39;use strict&amp;#39;;const bilibiliFormat = {regex: /https?:\/\/(www\.)?bilibili\.com\/video\/(BV[\w]+)\//i,embed: &amp;#39;//player.bilibili.com/player.html?bvid=$2&amp;amp;high_quality=1&amp;amp;autoplay=0&amp;#39;};const figmaFormat = {regex: /https?:\/\/(www\.)?figma\.com\/(file|proto)\/([0-9a-zA-Z]+)(\/.*)?/i,embed: &amp;#39;https://www.figma.com/embed?embed_host=share&amp;amp;url=https%3A%2F%2Fwww.figma.com%2F$2%2F$3&amp;amp;type=design&amp;amp;node-id=0%253A1&amp;amp;mode=design&amp;amp;t=p6zHLdZVkWzkR00Y-1&amp;#39;};const checkForEmbeds = () =&amp;gt; {document.querySelectorAll(&amp;#39;a:not([data-processed])&amp;#39;).forEach(a =&amp;gt; {const url = a.</description>
+    </item>
+    
+    <item>
+      <title>在 workflowy 中显示 bilibili 预览的油猴脚本</title>
+      <link>/post/workflowy_bill/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/workflowy_bill/</guid>
+      <description>// ==UserScript==// @name Workflowy Figma Embed// @namespace http://tampermonkey.net/// @version 0.1// @description Embed Figma files in Workflowy// @author You// @match https://workflowy.com/*// @grant none// ==/UserScript==(function() {&amp;#39;use strict&amp;#39;;const figmaFormat = {regex: /https?:\/\/(www\.)?figma\.com\/(file|proto)\/([0-9a-zA-Z]+)(\/.*)?/i,embed: &amp;#39;https://www.figma.com/embed?embed_host=share&amp;amp;url=https%3A%2F%2Fwww.figma.com%2F$2%2F$3&amp;#39;};const checkForEmbeds = () =&amp;gt; {document.querySelectorAll(&amp;#39;a:not([data-processed])&amp;#39;).forEach(a =&amp;gt; {const url = a.href;const match = url.match(figmaFormat.regex);if (match) {const embedUrl = url.replace(figmaFormat.regex, figmaFormat.embed);const iframe = document.</description>
+    </item>
+    
+    <item>
       <title>什么才是真正学会了？</title>
       <link>/post/learning/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
