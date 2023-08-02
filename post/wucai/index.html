@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="dark" />
+  
+  <title>如何在网页上划线和批注？推荐五彩插件 | Seyee&#39;s Blog</title>
+  <meta name="keywords" content="Seyee,blog,博客" />
+  <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
+  <meta name="author" content="Seyee" />
+  
+  
+  
+  <link rel="stylesheet" href="/sass/main.min.c5024a5101e82e5732da6afb7045af87fe7d92b271fb65ba4207566858c28f4f.css" />
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script>
+    var _hmt = _hmt || []
+    ;(function () {
+      var hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?bf4ee24df4eb8c453a6edf89fa3cdda9'
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+  </script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VET8LQFS48"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'G-VET8LQFS48')
+  </script>
+</head>
+
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    <span class="emoji">
+                        😘
+                    </span>
+                    
+                    
+                    Seyee&#39;s Blog
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/tags/">tags</a>
+                
+                <a href="/index.xml">rss</a>
+                
+                <a href="/about/">about</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>如何在网页上划线和批注？推荐五彩插件</h1>
+                    <div class="post-meta">
+                        <div>
+                            
+                            
+                              
+                            
+                            By Seyee | <time>2023-04-24</time> | 1 minutes
+                        </div>
+                        <div class="tags">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p><strong>什么是网页高亮工具</strong></p>
+<p>先解释一下五彩插件解决的场景，它可以直接在原网页上标注划线做笔记，严格意义上的同类产品是 hypothesis、diigo 等，cubox、readwise、简悦都属于需要先解析一下网页后高亮的插件。</p>
+<p><strong>为什么我已经在用 cubox 了还需要直接在网页高亮？</strong></p>
+<p>cubox 在移动端特别是公众号场景确实很方便，还有稍后读的功能，但是在电脑端用 cubox 高亮做笔记，需要**「保存全文到软件—回到软件内—找到这篇文章—标注」**这么长的路径，而且经常会有同一个链接多次保存的问题，又多了对于重复链接的清理工作。</p>
+<p>而在网页上直接标注，<strong>需要的操作只有划线这一个动作而已。</strong> 特别是某些有主题合集的网站，比如一篇分为好几个章节的长文档，用解析高亮类的工具要保存每个章节的链接，操作步骤重复 n 次。</p>
+<h3 id="为什么是五彩">
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af%e4%ba%94%e5%bd%a9" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    为什么是五彩
+</h3>
+<p>在五彩之前我用过很多网页高亮的插件，有各种各样的不满意，感谢最终让我发现了五彩插件，下面说一下它的优点。</p>
+<h4 id="1-兼容性好">
+    <a href="#1-%e5%85%bc%e5%ae%b9%e6%80%a7%e5%a5%bd" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    1. 兼容性好
+</h4>
+<p>很多网页高亮插件都是国外的软件，会有一些水土不服的兼容问题，比如从软件内部跳转到公众号的时候会因为丢失参数而不显示高亮等。我之前吐槽过的豆瓣的一个 feature 导致的问题，五彩竟然都做了处理。</p>
+<img src="https://cdn.sspai.com/2023/04/24/article/734707e595af35f7bc0b994169b173bb" alt="img" style="zoom:50%;" />
+<p>这两天五彩更新的最新版本处理了语雀博客的兼容，其他同类插件好像都还没实现。在使用过程中遇到兼容性或者其它问题都可以给官方反馈，目前 notion 等一些编辑器的网站都还不兼容，已经在开发计划上了。</p>
+<h4 id="2-使用无需每次手动点击激活">
+    <a href="#2-%e4%bd%bf%e7%94%a8%e6%97%a0%e9%9c%80%e6%af%8f%e6%ac%a1%e6%89%8b%e5%8a%a8%e7%82%b9%e5%87%bb%e6%bf%80%e6%b4%bb" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    2. 使用无需每次手动点击激活
+</h4>
+<p>激活指点一下插件才能标注划线，重新打开页面时也需要再点一下插件才会显示上次标注过的内容。以前用过一段时间的 hypothesis 其实还不错，是一款比较老牌、免费、开源的插件，但是每次使用需要激活，搜索也不好用。而五彩插件标注过的网页，不管隔多久再次打开，上次标注过的内容都会在原文上展示出来，立马就知道重点内容是什么。前段时间五彩插件更新了连续划线的模式，搭配快捷键切换划线模式，减少不必要的操作。</p>
+<h4 id="3-可以在离线-html-上标注">
+    <a href="#3-%e5%8f%af%e4%bb%a5%e5%9c%a8%e7%a6%bb%e7%ba%bf-html-%e4%b8%8a%e6%a0%87%e6%b3%a8" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    3. 可以在离线 HTML 上标注
+</h4>
+<p>如果原网址 404 失效了，自己有保存成离线 HTML 的话，可以继续在上面标注，需要去浏览器权限里开启一下允许访问文件 URL。</p>
+<h4 id="4-计划打通各种笔记软件">
+    <a href="#4-%e8%ae%a1%e5%88%92%e6%89%93%e9%80%9a%e5%90%84%e7%a7%8d%e7%ac%94%e8%ae%b0%e8%bd%af%e4%bb%b6" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    4. 计划打通各种笔记软件
+</h4>
+<p>五彩已支持 obsidian、workflowy 的划线同步 ，会逐步开发对接其它笔记软件，国内很多软件都比较封闭，对 api 的支持没有国外那么完善，五彩有计划做这一块，这样网页高亮可以更好地和笔记结合起来。</p>
+<h4 id="5-团队开放包容对反馈处理及时">
+    <a href="#5-%e5%9b%a2%e9%98%9f%e5%bc%80%e6%94%be%e5%8c%85%e5%ae%b9%e5%af%b9%e5%8f%8d%e9%a6%88%e5%a4%84%e7%90%86%e5%8f%8a%e6%97%b6" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    5. 团队开放、包容，对反馈处理及时
+</h4>
+<p>折腾 App 的过程中我特别爱给开发团队提反馈，接触的团队多了，意识到团队价值观很重要。虽然现在新的软件层出不穷，每个软件的使用寿命越来越短了，但是谁也不想先因为吃相难看用不下去。</p>
+<p>五彩目前是免费使用的，后期应该会按订阅制收费，估计不会有买断制。我是很支持给好用的工具付费的，人都是要吃饭的，只要价格合理就行。</p>
+<h3 id="和-obsidian的联用">
+    <a href="#%e5%92%8c-obsidian%e7%9a%84%e8%81%94%e7%94%a8" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    和 obsidian的联用
+</h3>
+<p>2023-08-02 更新，现在是和 obsidian 联用的，待更新 ing</p>
+<h3 id="和-workflowy-的联用">
+    <a href="#%e5%92%8c-workflowy-%e7%9a%84%e8%81%94%e7%94%a8" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    和 workflowy 的联用
+</h3>
+<p>这部分请查看 未修改版：如何在网页上划线和批注？推荐五彩插件 -  <a href="https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w">https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w</a></p>
+<h3 id="对知识管理的新体会">
+    <a href="#%e5%af%b9%e7%9f%a5%e8%af%86%e7%ae%a1%e7%90%86%e7%9a%84%e6%96%b0%e4%bd%93%e4%bc%9a" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    对知识管理的新体会
+</h3>
+<h4 id="1">
+    <a href="#1" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    1.
+</h4>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzAxMzIyNjgyOQ==&amp;mid=2488505366&amp;idx=1&amp;sn=769d48b1993c37a2ed27e321bb307b7c&amp;chksm=8a02f234bd757b2260b3234609ad30198b2c46096ed6b222cb50a6dd836b125b57d57b98e29b&amp;scene=21#wechat_redirect">上篇文章</a>里提到一个操作是我会定期把 cubox 里保存的链接全盘复制到 workflowy ，后来我把这些链接都删掉了，这些只有标题的链接会造成搜索关键词的时候有很多干扰信息，时间长了是很难记得里面的内容是什么的。所以现在只有用五彩划过线的链接，才同步到 workflowy 。</p>
+<h4 id="2">
+    <a href="#2" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    2.
+</h4>
+<p>近期看了《打造第二大脑》这本书，觉得这是一本扩写的渐进式总结，后来才知道和渐进式总结是同一个作者。再次感慨，现有的知识管理方法论里，我觉得最有用的就是渐进式总结，而其中最关键的点就是：<strong>设计可以找到的笔记。</strong> 所以知识管理我现在遵循「<strong>重搜索，轻整理</strong>」的原则。</p>
+<p>原本我打算完全不整理，使用过程中发现完全依赖搜索也是不可行的，笔记多了以后搜索某些关键词会有很多内容，所以现在我认为高质量、可参考的摘录，会拖到具体的问题下面，相当于手动把自己认可的内容放在搜索引擎的第一页。</p>
+<h4 id="3">
+    <a href="#3" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    3.
+</h4>
+<p>关键词不再作为一个树独立存在，而是放在具体的句子下面。这些句子大多是一些疑问句，以前我建了一些关键词树，后来发现浏览关键词的时候脑袋里需要先思考一下这些词意味着什么，我为什么要写下这种关键词，会增加大脑看到这些词瞬间的处理成本。</p>
+<p>比如，以前我会建一个冥想的节点，再写下和冥想有关的关键词：正念、觉知等。现在变成两个问题，冥想是什么？怎么进行冥想？</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/04/24/article/e965a2b879bec1f65d76bab5695cc2d2" 
+    alt="img" 
+     /></p>
+<p>虽然以前看过存过很多冥想的资料，当有一天跟朋友说起我对冥想感兴趣的时候，他问我什么是冥想，为什么年轻人要做冥想，我一时语塞，发现竟然不太能准确的回答出这个问题。当我写下了这两条提问并且稍微整理了一下自己的理解后，在脑袋里想到冥想这个词具体了很多，可能自问自答能起到聚焦核心的作用。</p>
+<img src="https://cdn.sspai.com/2023/04/24/article/6e4ef245ca1cf943470f2e8c7e53fc4d" alt="img" style="zoom:50%;" />
+<p>上图来源<a href="https://mp.weixin.qq.com/s?__biz=MzU2NDI1Mzg2NQ==&amp;mid=2247489662&amp;idx=1&amp;sn=068849800bebec8bdab7c745f675449c&amp;chksm=fc4c9db8cb3b14aecf20fc08f78ecef89d7a534f4f6c94793da221f5f9b8fa78798a70b4e9d2&amp;mpshare=1&amp;scene=21&amp;srcid=1013z9l4cwMusKjqUsP4ud3O&amp;sharer_sharetime=1634171395336&amp;sharer_shareid=d8368151a859b982687d48d22f62fd55#wechat_redirect">《用“卡片笔记写作法”读《卡片笔记写作法》 译者现身说法并完整示范 | 学习骇客》</a></p>
+<p>为什么需要保存前面那种「冥想 OR 正念 OR 觉知」文本？一方面是选中这行字，按一下 workflowy 的全局搜索快捷键，立刻就能看到搜索结果，而不用手动去搜索输入框输这么长一串，后续也可以继续维护这个搜索条件。（在 workflowy 里搜索「冥想 OR 正念 OR 觉知」表示查找包含这三个词任意一个的文本）</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/04/24/article/d4d6af0d1eb6a961ee6a9508f610397c" 
+    alt="img" 
+     /></p>
+<p>另一方面，这些搜索关键词就是我对于这个问题埋下的钩子，有些词其实有很多种表述方式，比如怎么搜索信息的关键词有这些。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/04/24/article/22ee184fa9829a37190f6b8c7ee22a88" 
+    alt="img" 
+     /></p>
+<h4 id="4">
+    <a href="#4" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    4.
+</h4>
+<p>workflowy 主页近期有了一些变化，以前大多是一些分类，现在会把一些近期重点在看的系列资料或者问题直接放在一级节点，确实会导致一级节点会越来越多，但是我现在强迫症越来越少了，习惯了这种无序的状态。后来我联想到这种做法和<strong>阿饭管理选题的方法</strong>（下图，来源公众号：阿饭的宝藏）是一样的。</p>
+<img src="https://cdn.sspai.com/2023/04/24/article/7552eaa7c050961fdc5db4eadb1aa1b8" alt="img" style="zoom:33%;" />
+<h3 id="五彩的不足">
+    <a href="#%e4%ba%94%e5%bd%a9%e7%9a%84%e4%b8%8d%e8%b6%b3" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    五彩的不足
+</h3>
+<p>惯例说一些发现的不足和我想要的功能：</p>
+<ol>
+<li><del>没有移动端，有计划开发，目测是个大工程，应该没那么快实现，因为五彩电脑端用得太舒服导致我现在都不太想在手机上用 cubox 看长文了。</del>  2023-08-02  在 safari 已经可以用了，安卓好像也有方案</li>
+<li>划线管理后台的搜索还不完善，目前只能搜索网站的标题，不过我的划线都同步到了 workflowy ，搭配 workflowy 的搜索对我的使用没太大影响。</li>
+<li>兼容 notion 搭建的博客，这个市面上已有的同类产品都没有实现的，五彩在计划了，期待。</li>
+<li>pdf 高亮，hypothesis 有这个功能。</li>
+<li>识别出常见网站的作者或来源，比如公众号的作者和公众号名称，可以减少不必要的分类工作。</li>
+</ol>
+<p>总的来说，五彩 + obsidian 完美的服务了我在渐进式总结实践的第二层，将摘抄和笔记丝滑地结合在一起，记过的笔记、看过的文章不再是死水一潭，能真正的能流动起来。感谢五彩作者提供了这么好用的工具，希望越来越好，也有更多人知道这款好用的工具。</p>
+
+    </div>
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/post/do_nothing/" title="Previous post (older)">
+            <span>Previous</span>
+            当我什么都不想做
+            </a>
+        
+        
+        
+        <a rel="next" href="/post/why_blog/" title="Next post (newer)">
+            <span>Next</span>
+            为什么写博客
+            </a> 
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+</div>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+        </nav>
+
+        
+    </section>
+    <script defer src="/ts/features.706a523ba43e6d0427c7fdf2b9d05dbd0920d3f12942b453690b495cb2522743.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>
