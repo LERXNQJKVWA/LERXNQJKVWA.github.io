@@ -160,13 +160,15 @@
 <div class="container">
     
     
-<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
 <div id="waline"></div>
 
 <script>
     Waline({
         el: '#waline',
-        serverURL: 'https:\/\/comment.seyee.co\/',			  
+        serverURL: 'https:\/\/comment.seyee.co\/',
+        meta: ["nick","mail"]			  
     });
 </script>
 
