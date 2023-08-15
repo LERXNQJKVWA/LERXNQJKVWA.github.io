@@ -16,5 +16,14 @@
       <description>什么是网页高亮工具 先解释一下五彩插件解决的场景，它可以直接在原网页上标注划线做笔记，严格意义上的同类产品是 hypothesis、diigo 等</description>
     </item>
     
+    <item>
+      <title>我的相册整理｜ios 端</title>
+      <link>/post/photo/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/photo/</guid>
+      <description>去年把照片从第三方云盘下载到 iPhone 本地了，因为有时候网络差在云盘找照片很慢，而且不管是读书笔记、剪藏的文章还是照片，现在我都倾向于轻整理，尽量用</description>
+    </item>
+    
   </channel>
 </rss>
