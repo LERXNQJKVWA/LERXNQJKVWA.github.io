@@ -13,7 +13,7 @@
   
   
   
-  <link rel="stylesheet" href="/sass/main.min.0471440c80a001e8697b32448bef9af7b766aff8e0f7b0e752093c8a83cb0798.css" />
+  <link rel="stylesheet" href="/sass/main.min.d405ff3683a37bc3ff1f2fb31e16c7a945b5c0b65a9f3fdc52c46421032db30c.css" />
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
   
@@ -97,7 +97,7 @@
                                 
                                 By Seyee | <time>created 2023-08-17</time>
                                 <time></time>
-                                | 755 words 
+                                | 760 words 
                                 | 2 minutes 
                             </div>
                         
@@ -211,6 +211,13 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">parsers</span><span class="p">:</span><span class="w"> </span><span class="c"># array</span><span class="w">
@@ -219,19 +226,26 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">prepend-rules</span><span class="p">:</span><span class="w">  </span><span class="c"># 把规则添加到最前面</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">DOMAIN-SUFFIX,checkip.synology.com,DIRECT </span><span class="w"> </span><span class="c"># DIRECT表示不走代理，即不通过代理节点直接连接。GLOBAL则是走全局代理节点。REJECT则表示禁止连接，使用REJECT后，将会屏蔽对应网站。</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url, interval, selected }) =&gt; {
+</span></span></span><span class="line"><span class="cl"><span class="sd">        module.exports.parse = async (raw, { axios, yaml, notify, console }, 
+</span></span></span><span class="line"><span class="cl"><span class="sd">        { name, url, interval, selected }) =&gt; {
 </span></span></span><span class="line"><span class="cl"><span class="sd">        const obj = yaml.parse(raw)
 </span></span></span><span class="line"><span class="cl"><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">        // 删除特定规则
-</span></span></span><span class="line"><span class="cl"><span class="sd">        const ruleToDelete = [&#34;DOMAIN-SUFFIX,weibo.com,🎯 全球直连&#34;,&#34;GEOIP,CN,🎯 全球直连&#34;];
+</span></span></span><span class="line"><span class="cl"><span class="sd">        const ruleToDelete = [
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &#34;DOMAIN-SUFFIX,weibo.com,🎯 全球直连&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &#34;GEOIP,CN,🎯 全球直连&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        ];
 </span></span></span><span class="line"><span class="cl"><span class="sd">        obj.rules = obj.rules.filter(rule =&gt; !ruleToDelete.includes(rule));
 </span></span></span><span class="line"><span class="cl"><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">        // 添加新的 MATCH 项
-</span></span></span><span class="line"><span class="cl"><span class="sd">        const newMatchRule = [&#34;DOMAIN-SUFFIX,weibo.com,🌍 国外媒体&#34;,&#34;DOMAIN-SUFFIX,m.weibo.com,🌍 国外媒体&#34;,&#34;DOMAIN-SUFFIX,share.api.weibo.cn,🌍 国外媒体&#34;];
+</span></span></span><span class="line"><span class="cl"><span class="sd">        const newMatchRule = [
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &#34;DOMAIN-SUFFIX,weibo.com,🌍 国外媒体&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &#34;DOMAIN-SUFFIX,m.weibo.com,🌍 国外媒体&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &#34;DOMAIN-SUFFIX,share.api.weibo.cn,🌍 国外媒体&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        ];
 </span></span></span><span class="line"><span class="cl"><span class="sd">        obj.rules.unshift(...newMatchRule);
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">        return yaml.stringify(obj)
-</span></span></span><span class="line"><span class="cl"><span class="sd">      }</span><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="sd">        return yaml.stringify(obj)</span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>}<span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="参考链接">
