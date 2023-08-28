@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="dark" />
+  
+  <title>用 obsidian 两年多，现在我怎么同步和使用？ | Seyee&#39;s Blog</title>
+  <meta name="keywords" content="Seyee,blog,博客" />
+  <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
+  <meta name="author" content="Seyee" />
+  
+  
+  
+  <link rel="stylesheet" href="/sass/main.min.f48bd89553e6b0b008c2fda9437bad1dcfc3afeb54c59a7b12da8167f47acc9f.css" />
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+  
+</head>
+
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    <span class="emoji">
+                        😘
+                    </span>
+                    
+                    
+                    Seyee&#39;s Blog
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/tags/">tags</a>
+                
+                <a href="/index.xml">rss</a>
+                
+                <a href="/about/">about</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>用 obsidian 两年多，现在我怎么同步和使用？</h1>
+                    <div class="post-meta">
+                        
+                            
+                            <div>
+                                
+                                
+                                  
+                                
+                                By Seyee | <time>created 2023-08-28</time>
+                                <time></time>
+                                | 3582 words 
+                                | 8 minutes 
+                            </div>
+                        
+                       
+                        <div class="tags">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p>用 obsidian 已经两年多了，距离我上次更新《如何用 obsidian 和 flomo 搭建知识体系》已经过去一年半了，重新看了一遍以前写的内容，当时选择 obsidian 的优点，现在依然成立。</p>
+<p><strong>特别是第一点，通用 md 形式这个优点对我来说更重要了，但是里面的使用案例基本上都失效了，不再和 flomo 联用。</strong></p>
+<p>以前旧版 flomo 还没下架的时候，我还写过 flomo 下载成 md 的脚本，现在这些 flomo 文件也被我从 obsidian 里面移除了。大概率我不会换最终笔记软件了，哪怕 obsidian 是很方便跑路的。</p>
+<h3 id="以前没有-all-in-one-obsidian-的原因">
+    <a href="#%e4%bb%a5%e5%89%8d%e6%b2%a1%e6%9c%89-all-in-one-obsidian-%e7%9a%84%e5%8e%9f%e5%9b%a0" class="anchor_txt">
+        以前没有 all in one obsidian 的原因
+    </a>
+    
+</h3>
+<ol>
+<li>我对移动端的需求还挺高，obsidian 官方移动端不好用，很难快速丝滑地进行全局搜索，这也是我犹豫了几次要不要咬咬牙上官方同步最后还是放弃了的原因。</li>
+<li>电脑端的原生搜索，只有侧边栏小小一块，用起来很不爽，结果展示不够全面。</li>
+</ol>
+<p>现在这两个问题都得到了解决，我的大部分知识管理内容主要在 obsidian 进行， workflowy 里主要是放一些个人时间轴，标记每个阶段的大事件。</p>
+<h4 id="解决方案如下">
+    <a href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88%e5%a6%82%e4%b8%8b" class="anchor_txt">
+        解决方案如下：
+    </a>
+    
+</h4>
+<ol>
+<li>不使用 obsidian 官方移动端，ios 用 1writer webdav 方式打开 obsidian 的库（文件夹），两端是实时双向同步的，不需要导入导出的操作。1writer 只有 ios，30 元买断制，优点是全局搜索非常快，几乎是秒开，比 obsidian 的电脑搜索还要快。（另外写文章的这几天 iCloud 卡顿的问题有所缓解，可以观察一下）</li>
+<li>原生搜索的两个优化插件：float search 和 better search view。</li>
+</ol>
+<p><bold>float search 的作用是把官方搜索挪到页面中间或者居中弹窗，比起原生侧边栏窄窄一条，视觉上更宽敞舒服。</bold></p>
+<p><bold>better search view 的作用则是优化展示结果。</bold>比如 <code>&gt;</code> 这种 md 引用语法在原生里面是不会渲染成预览效果的，用了这个插件后在搜索结果里会展示出来，此外还有图片、<code>[]()</code> 等语法都会渲染。如果一段话是属于某个 heading 的标题下的，在搜索结果也会展示出来，这样可以看到文本所属的标题，比如图片里是微信读书同步过来的笔记，可以看到所属章节，非常清晰。<br>
+<img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/msgid-fbb6e63843ee1925659dc49add1229c8-102c5076.png" 
+    alt="" 
+     /></p>
+<p>如果库里笔记特别多，better search view 会有一点影响搜索速度，我目前 3k 条左右，在一个性能一般的 win 笔记本上用起来还好，不算卡，可以在自己的设备上感受一下能否接受。</p>
+<p>总的来说，工具的使用比例完全倾斜到了 obsidian ，主要是它的搜索体验上去了，就像我前几篇文章里强调的：<bold>重搜索，轻整理。</bold>越来越认同这一点，是 workflowy 的搜索设计给我的启发。</p>
+<h3 id="我的-obsidian-使用心理变化">
+    <a href="#%e6%88%91%e7%9a%84-obsidian-%e4%bd%bf%e7%94%a8%e5%bf%83%e7%90%86%e5%8f%98%e5%8c%96" class="anchor_txt">
+        我的 obsidian 使用心理变化
+    </a>
+    
+</h3>
+<h4 id="1-很少主动给别人安利-obsidian-了">
+    <a href="#1-%e5%be%88%e5%b0%91%e4%b8%bb%e5%8a%a8%e7%bb%99%e5%88%ab%e4%ba%ba%e5%ae%89%e5%88%a9-obsidian-%e4%ba%86" class="anchor_txt">
+        1 很少主动给别人安利 obsidian 了
+    </a>
+    
+</h4>
+<p>把这个放在第一条写，是因为折腾效率工具以来，和很多人一对一交流过工具的使用问题，时间长了发现每个人的需求千差万别，对软件在意的方面完全不一样，比如我喜欢 obsidian 的离线可用，通用 md，很多人压根不在意什么离不离线，只想有一个打开就能用的软件。</p>
+<p>所以现在哪怕我使用 obsidian 非常快乐，也知道它适合的人群有限，虽然还是有一种自家孩子想炫耀的心理，尽量在 obsidian 群大本营里得瑟。</p>
+<h4 id="2-从爱折腾插件到精简插件">
+    <a href="#2-%e4%bb%8e%e7%88%b1%e6%8a%98%e8%85%be%e6%8f%92%e4%bb%b6%e5%88%b0%e7%b2%be%e7%ae%80%e6%8f%92%e4%bb%b6" class="anchor_txt">
+        2 从爱折腾插件到精简插件
+    </a>
+    
+</h4>
+<p>最初玩 obsidian 的时候，每天就是兴致勃勃的体验各种各样的插件，笔记倒没写多少。插件系统也是很多人对 obsidian 望而生畏的原因，觉得复杂。<bold>实际上插件不是必需品</bold>，如果现在让我做选择，我觉得只有前面提到的两款搜索插件是一定要有的，其余功能官方自带都可以满足，安心和其它笔记软件一样打字就好。我的新建笔记基本上都是从空白文件开始，很少用 yaml，模板等。</p>
+<h5 id="现在离不开的插件">
+    <a href="#%e7%8e%b0%e5%9c%a8%e7%a6%bb%e4%b8%8d%e5%bc%80%e7%9a%84%e6%8f%92%e4%bb%b6" class="anchor_txt">
+        现在离不开的插件
+    </a>
+    
+</h5>
+<ol>
+<li><strong>float search</strong> 和<strong>better search view</strong>，这两个插件都是开启就行，几乎不需要做什么操作，只是视觉上的优化。</li>
+<li><strong>linter</strong> 格式化插件，主要用两个功能，一是在中英文中间加空格，二是修正数字列表的编号，比如从列表 1、2、3 删除了 2，格式化后就将编号从 1、3 改成 1、2。</li>
+<li>五彩、微信读书同步插件</li>
+<li><strong>commander</strong>，在界面上加一些常用的菜单按钮。</li>
+<li><strong>calender</strong>，日历插件，点击生成当天的日记。这个好像是使用最久的一款三方插件了，回头看我一年半前的那篇 obsidian 的文章，很多用法和插件都弃用了。</li>
+</ol>
+<p>其余的插件虽然也用，比如会用 dataview 写日记模板，这样每天会看一下每年今日的笔记，用 better word count 计算页面字符，库里的笔记数量等， 都是一些锦上添花可有可无的东西。我甚至都不用三方主题，就是自带的主题，稍微改一改颜色。</p>
+<h4 id="3-从纠结分类到自己写的内容只有一个文件夹">
+    <a href="#3-%e4%bb%8e%e7%ba%a0%e7%bb%93%e5%88%86%e7%b1%bb%e5%88%b0%e8%87%aa%e5%b7%b1%e5%86%99%e7%9a%84%e5%86%85%e5%ae%b9%e5%8f%aa%e6%9c%89%e4%b8%80%e4%b8%aa%e6%96%87%e4%bb%b6%e5%a4%b9" class="anchor_txt">
+        3 从纠结分类到自己写的内容只有一个文件夹
+    </a>
+    
+</h4>
+<p>我的 obsidian 一级目录虽然看起来很多，但是其实只是对收藏型的内容做了来源（微信读书、wucai 等）和文件类型（pdf、html）分类，自己写的笔记都放在「我的笔记」这个文件夹里。<br>
+<img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/chatimg-1e874dfd8043e3cdd2059a66ad4ac7bc-bb11db10.png" 
+    alt="" 
+     /></p>
+<p><bold>因为大部分内容都不需要刻意整理，只需要在想找到的时候，能快速找到就行。</bold>所以我现在很多笔记的标题就是一些关键词组合或者问句，比如 hugo 部署遇到的问题，hugo 的博客系统有哪些。</p>
+<p>以前觉得 obsidian 的全文搜索不行，所以尝试过一段时间的单主题放在单一文件里，比如前端笔记、减肥笔记等全都放在一个 md，后来发现这样的文件，随着内容的越来越多，虽然在侧边栏可以生成一个大纲树，但是翻阅的时候会觉得非常干扰，难以专心，时间长了还会不记得哪些是自己写过的小主题。</p>
+<p>现在一个页面一个问题的好处就是，我平常会用快速切换，可以很清晰的看到自己写过什么问题。</p>
+<p><img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/chatimg-656d969a1c379d3fe96347d05973d28a-bb11db10.png" 
+    alt="" 
+     /></p>
+<h4 id="4-改变了做笔记的形式">
+    <a href="#4-%e6%94%b9%e5%8f%98%e4%ba%86%e5%81%9a%e7%ac%94%e8%ae%b0%e7%9a%84%e5%bd%a2%e5%bc%8f" class="anchor_txt">
+        4 改变了做笔记的形式
+    </a>
+    
+</h4>
+<p>现在我 obsidian 里标题命名法应该算常青笔记里的<strong>原子化原则</strong>吧，对于常青笔记的概念可以参考少楠这篇 <a href="https://pmthinking.notion.site/EvergreenNotes-0a3f82b22a654eb18ccf3e83854ec1ba">《何谓常青笔记（EvergreenNotes）》</a>。</p>
+<p><strong>Ryooo 的 kg 笔记法</strong>也一定程度有点相似，但是我的命名没有那么严格的按概念笔记、实体笔记和关系笔记去分类，而且我认为很多概念和实体笔记是没有必要刻意手动用自己的话写出来的，一定程度上不认同 flomo 提倡的用自己的话做笔记。</p>
+<p>因为概念和实体实在是太多了，<bold>如果你真的理解了这个概念，不用记下来，没有理解的话，用自己的话记录也是欺骗自己。</bold>当然我这里特指的是概念笔记，比如什么是常青笔记这些，我最近大量删除了很多这类笔记。</p>
+<blockquote>
+<p>笔记圈里特别爱讨论的一个问题就是为什么要做笔记？其实现在回顾确实很多笔记是在骗自己，如果当时没有理解记下来的东西，事后也不会想起来自己记过这个东西。而真正理解了，好像也没有记下来的必要了，这算不算是一个笔记的悖论。<br>
+<br><br>
+但是我还是觉得记笔记是有好处的，只是形式和以前不一样了，比起大段大段的复制粘贴，更重要的是关键词，自己遇到的问题，下次再遇到的时候需要用什么关键词快速找到答案，建立起一个个锚点。</p>
+<p>所以搜索技能和知识管理软件的搜索体验真的无比重要了。<br>
+<br><br>
+<a href="http://seyee.co/post/learning/#WCREFX-1007327">《什么才是真正学会了？ | Seyee&amp;rsquo;s Blog》</a></p>
+</blockquote>
+<p>那么在自己完全理解某个概念前和问题前，应该怎么办呢？完全放任不管也不行，时间长了也想不起来看过的资料。</p>
+<p>我使用剪藏类的工具也有很长时间的历史了，从最初的印象笔记全文剪藏，到 cubox 的全文剪藏基础上再划线，再到现在的五彩划线，发现收藏量级上去以后，想要找到自己看过的某个文章的内容是很难的，而且大部分的划线，更多的是在那一刻的认同，不一定对自己是真的有实际意义的。</p>
+<p>渐进式总结里也提到了这个困境：<strong>知识的挑战在于跨时距，现在的你要为未来的你埋点，让未来更快的找到想要的内容，而不是淹没在一堆不经筛选的内容里。</strong></p>
+<p>所以你才需要在每次搜索了某个问题后，进行一个阶段性的小结，我现在的做法就是用五彩和 obsidian 结合，比如我搜正手划船和反手划船的区别，看到认可的内容会划线，看了好几个网页后，我会在最认可的某些答案里，会加上双链 <code>[[正手划船和反手划船的区别]]</code>，相当于双链是我搜索的最高权重，只有我认为最有参考价值的才会加，如果某个问题我没找到最满意的答案，这次在原网页上高亮划线的内容，可以在我下次查找的过程中起到作用。<br>
+<img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/chatimg-e7da0d34a78aac359720233adea0d9a0-bb11db10.png" 
+    alt="" 
+     /></p>
+<p>可以很清晰看到，这个页面的并没有刻意用自己的话去复述自己的笔记，因为这篇文章的答案我已经很满意了，一句话概述就是正手主要锻炼的是背的上半部分，反手是下半部分。下次我想再复习一下原因，可以很快的重新打开这篇文章查看，也不用做很多复制粘贴的工作。</p>
+<p><bold>当然不必在每一次搜索的时候都要做笔记，我现在的强迫症越来越少了，想找某个资料找不到的情况一定会发生。既然不可能 100% 杜绝找不到，那好像 1-99% 的概率会找不到区别也不是特别大。</bold></p>
+<p>找不到的时候都是会不爽的，所以为了减少一点点找不到的概率，而去事无巨细的存、整理花费的时间。相比之下还是调整一下心态性价比高一点。</p>
+<h4 id="5-用-obsidian-的双链做-moc">
+    <a href="#5-%e7%94%a8-obsidian-%e7%9a%84%e5%8f%8c%e9%93%be%e5%81%9a-moc" class="anchor_txt">
+        5 用 obsidian 的双链做 moc
+    </a>
+    
+</h4>
+<p>以前觉得 obsidian 作为文档型笔记软件，块引用没有 logseq 优雅，所以双链用的比较少。现在用单页面单个具体问题的方式后，在我的 obsidian 库里页面引用其实等于块引用。</p>
+<p>前面提到我的笔记不分类，可能你会困惑怎么结构化，答案和以前一样还是 moc，但是只有一个主题相关的卡片非常多了，有必要建一个索引我才会建 moc，下面是我的一个 moc 示范。</p>
+<p><img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/chatimg-16c6f715fc27584b95d6de56ac2c8789-bb11db10.png" 
+    alt="" 
+     /><br>
+这种 moc 的搭建不会建很多，目前我只有这些：</p>
+<p><img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/chatimg-df5f9926a47a84a0ab668c280a5b4780-bb11db10.png" 
+    alt="" 
+     /><br>
+这个 moc 文件名搜索是一个文件，里面用的是 obsidian 自带的嵌入 query 语法，这个语法好像已经上线两年了，我最近才知道。</p>
+<pre tabindex="0"><code>```query 
+file:&#34;moc&#34; -搜索
+</code></pre><p>用这个语法的场景是，有一些经常需要调用的搜索，搜索条件又不止一个关键词，懒得每次输搜索条件，可以建一个这样的页面来存搜索条件，我就有一个文件夹叫搜索存档。</p>
+<h3 id="最后">
+    <a href="#%e6%9c%80%e5%90%8e" class="anchor_txt">
+        最后
+    </a>
+    
+</h3>
+<p>我的 obsidian 2023 年版使用心得就分享到这里啦，前面埋了一个彩蛋，引用了我的博客的一段内容，是我前段时间用 hugo+github pages 折腾的，以后的查看原文会放上博客版链接，有修改的内容会在博客版继续更新，有兴趣可以关注一下~</p>
+
+    </div>
+    
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/post/clash_parser/" title="Previous post (older)">
+            <span>Previous</span>
+            Clash for Windows 配置文件预处理(parser)
+            </a>
+        
+        
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@latest"></script>
+<div id="waline"></div>
+
+<script>
+  Waline({
+      el: '#waline',
+      serverURL: 'https:\/\/comment.seyee.co\/',
+      placeholder: '不想买服务器，请开魔法翻墙评论~',
+      meta: ["nick","mail"]
+  });
+</script>
+
+
+</div>
+<aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li><h3 id="以前没有-all-in-one-obsidian-的原因">
+    <a href="#%e4%bb%a5%e5%89%8d%e6%b2%a1%e6%9c%89-all-in-one-obsidian-%e7%9a%84%e5%8e%9f%e5%9b%a0" class="anchor_txt">
+        以前没有 all in one obsidian 的原因
+    </a>
+    
+</h3><ul>
+                        
+                <li><h4 id="解决方案如下">
+    <a href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88%e5%a6%82%e4%b8%8b" class="anchor_txt">
+        解决方案如下：
+    </a>
+    
+</h4></li></ul>
+                </li>
+                <li><h3 id="我的-obsidian-使用心理变化">
+    <a href="#%e6%88%91%e7%9a%84-obsidian-%e4%bd%bf%e7%94%a8%e5%bf%83%e7%90%86%e5%8f%98%e5%8c%96" class="anchor_txt">
+        我的 obsidian 使用心理变化
+    </a>
+    
+</h3><ul>
+                        
+                <li><h4 id="1-很少主动给别人安利-obsidian-了">
+    <a href="#1-%e5%be%88%e5%b0%91%e4%b8%bb%e5%8a%a8%e7%bb%99%e5%88%ab%e4%ba%ba%e5%ae%89%e5%88%a9-obsidian-%e4%ba%86" class="anchor_txt">
+        1 很少主动给别人安利 obsidian 了
+    </a>
+    
+</h4></li>
+                <li><h4 id="2-从爱折腾插件到精简插件">
+    <a href="#2-%e4%bb%8e%e7%88%b1%e6%8a%98%e8%85%be%e6%8f%92%e4%bb%b6%e5%88%b0%e7%b2%be%e7%ae%80%e6%8f%92%e4%bb%b6" class="anchor_txt">
+        2 从爱折腾插件到精简插件
+    </a>
+    
+</h4><ul>
+                        
+                <li><h5 id="现在离不开的插件">
+    <a href="#%e7%8e%b0%e5%9c%a8%e7%a6%bb%e4%b8%8d%e5%bc%80%e7%9a%84%e6%8f%92%e4%bb%b6" class="anchor_txt">
+        现在离不开的插件
+    </a>
+    
+</h5></li></ul>
+                </li>
+                <li><h4 id="3-从纠结分类到自己写的内容只有一个文件夹">
+    <a href="#3-%e4%bb%8e%e7%ba%a0%e7%bb%93%e5%88%86%e7%b1%bb%e5%88%b0%e8%87%aa%e5%b7%b1%e5%86%99%e7%9a%84%e5%86%85%e5%ae%b9%e5%8f%aa%e6%9c%89%e4%b8%80%e4%b8%aa%e6%96%87%e4%bb%b6%e5%a4%b9" class="anchor_txt">
+        3 从纠结分类到自己写的内容只有一个文件夹
+    </a>
+    
+</h4></li>
+                <li><h4 id="4-改变了做笔记的形式">
+    <a href="#4-%e6%94%b9%e5%8f%98%e4%ba%86%e5%81%9a%e7%ac%94%e8%ae%b0%e7%9a%84%e5%bd%a2%e5%bc%8f" class="anchor_txt">
+        4 改变了做笔记的形式
+    </a>
+    
+</h4></li>
+                <li><h4 id="5-用-obsidian-的双链做-moc">
+    <a href="#5-%e7%94%a8-obsidian-%e7%9a%84%e5%8f%8c%e9%93%be%e5%81%9a-moc" class="anchor_txt">
+        5 用 obsidian 的双链做 moc
+    </a>
+    
+</h4></li></ul>
+                </li>
+                <li><h3 id="最后">
+    <a href="#%e6%9c%80%e5%90%8e" class="anchor_txt">
+        最后
+    </a>
+    
+</h3>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+        </nav>
+
+        
+    </section>
+    <script defer src="/ts/features.dd8e5b18a6dda91367e396fd8dc9b9f83a1993065f709a53e056e0f2e9096ea1.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>

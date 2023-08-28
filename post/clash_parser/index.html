@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="dark" />
   
-  <title>Clash for Windows 配置文件预处理 | Seyee&#39;s Blog</title>
+  <title>Clash for Windows 配置文件预处理(parser) | Seyee&#39;s Blog</title>
   <meta name="keywords" content="Seyee,blog,博客" />
   <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
   <meta name="author" content="Seyee" />
   
   
   
-  <link rel="stylesheet" href="/sass/main.min.d405ff3683a37bc3ff1f2fb31e16c7a945b5c0b65a9f3fdc52c46421032db30c.css" />
+  <link rel="stylesheet" href="/sass/main.min.f48bd89553e6b0b008c2fda9437bad1dcfc3afeb54c59a7b12da8167f47acc9f.css" />
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
   
@@ -86,7 +86,7 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>Clash for Windows 配置文件预处理</h1>
+                    <h1>Clash for Windows 配置文件预处理(parser)</h1>
                     <div class="post-meta">
                         
                             
@@ -117,63 +117,43 @@
 Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
 </blockquote>
 <h3 id="为什么需要使用配置文件预处理">
-    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e4%bd%bf%e7%94%a8%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e4%bd%bf%e7%94%a8%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86" class="anchor_txt">
+        为什么需要使用配置文件预处理
     </a>
-    为什么需要使用配置文件预处理
+    
 </h3>
 <p>买的节点一般会自动更新配置规则，如果直接在配置里修改，更新后会被远程数据覆盖，自己添加的规则就没有了。所以需要一个与订阅规则独立互不影响的配置。</p>
 <h3 id="配置文件预处理添加入口">
-    <a href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86%e6%b7%bb%e5%8a%a0%e5%85%a5%e5%8f%a3" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86%e6%b7%bb%e5%8a%a0%e5%85%a5%e5%8f%a3" class="anchor_txt">
+        配置文件预处理添加入口
     </a>
-    配置文件预处理添加入口
+    
 </h3>
 <h4 id="1-设置---配置">
-    <a href="#1-%e8%ae%be%e7%bd%ae---%e9%85%8d%e7%bd%ae" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#1-%e8%ae%be%e7%bd%ae---%e9%85%8d%e7%bd%ae" class="anchor_txt">
+        1. 设置 - 配置
     </a>
-    1. 设置 - 配置
+    
 </h4>
 <p><img loading="lazy" 
     src="https://wucaiimg.dotalk.cn/wxmedia/msgid-29e0079d68e1bfa3e704c72fea46c415-aa44f69d.png" 
     alt="" 
      /></p>
 <h4 id="2-配置---右键">
-    <a href="#2-%e9%85%8d%e7%bd%ae---%e5%8f%b3%e9%94%ae" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#2-%e9%85%8d%e7%bd%ae---%e5%8f%b3%e9%94%ae" class="anchor_txt">
+        2. 配置 - 右键
     </a>
-    2. 配置 - 右键
+    
 </h4>
 <p><img loading="lazy" 
     src="https://wucaiimg.dotalk.cn/wxmedia/msgid-450f12280eaf9290d988c0a082b6fa50-fb9656bf.png" 
     alt="" 
      /></p>
 <h3 id="自定义规则的书写方式">
-    <a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a7%84%e5%88%99%e7%9a%84%e4%b9%a6%e5%86%99%e6%96%b9%e5%bc%8f" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a7%84%e5%88%99%e7%9a%84%e4%b9%a6%e5%86%99%e6%96%b9%e5%bc%8f" class="anchor_txt">
+        自定义规则的书写方式
     </a>
-    自定义规则的书写方式
+    
 </h3>
 <p>目前 Clash 支持的规则类型如下:</p>
 <ul>
@@ -249,14 +229,10 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="参考链接">
-    <a href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="anchor">
-        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-            <path fill-rule="evenodd"
-                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-            </path>
-        </svg>
+    <a href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="anchor_txt">
+        参考链接
     </a>
-    参考链接
+    
 </h3>
 <ul>
 <li><a href="https://chenjuefei.com:444/117.html">Clash使用Parser添加自定义规则并防止更新覆盖 - 觉今是而昨非 - Blog</a></li>
@@ -264,6 +240,7 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
 </ul>
 
     </div>
+    
 </div>
 
 <div class="container">
@@ -276,6 +253,11 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
             </a>
         
         
+        
+        <a rel="next" href="/post/obsidian2023/" title="Next post (newer)">
+            <span>Next</span>
+            用 obsidian 两年多，现在我怎么同步和使用？
+            </a> 
         
     </nav>
     
@@ -297,6 +279,118 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
 
 
 </div>
+<aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li><h3 id="为什么需要使用配置文件预处理">
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e4%bd%bf%e7%94%a8%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86" class="anchor_txt">
+        为什么需要使用配置文件预处理
+    </a>
+    
+</h3></li>
+                <li><h3 id="配置文件预处理添加入口">
+    <a href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86%e6%b7%bb%e5%8a%a0%e5%85%a5%e5%8f%a3" class="anchor_txt">
+        配置文件预处理添加入口
+    </a>
+    
+</h3><ul>
+                        
+                <li><h4 id="1-设置---配置">
+    <a href="#1-%e8%ae%be%e7%bd%ae---%e9%85%8d%e7%bd%ae" class="anchor_txt">
+        1. 设置 - 配置
+    </a>
+    
+</h4></li>
+                <li><h4 id="2-配置---右键">
+    <a href="#2-%e9%85%8d%e7%bd%ae---%e5%8f%b3%e9%94%ae" class="anchor_txt">
+        2. 配置 - 右键
+    </a>
+    
+</h4></li></ul>
+                </li>
+                <li><h3 id="自定义规则的书写方式">
+    <a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a7%84%e5%88%99%e7%9a%84%e4%b9%a6%e5%86%99%e6%96%b9%e5%bc%8f" class="anchor_txt">
+        自定义规则的书写方式
+    </a>
+    
+</h3></li>
+                <li><h3 id="参考链接">
+    <a href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="anchor_txt">
+        参考链接
+    </a>
+    
+</h3>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
 
 </main>
 

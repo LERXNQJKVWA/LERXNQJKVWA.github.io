@@ -6,9 +6,18 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Clash for Windows 配置文件预处理</title>
+      <title>用 obsidian 两年多，现在我怎么同步和使用？</title>
+      <link>/post/obsidian2023/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/obsidian2023/</guid>
+      <description>用 obsidian 已经两年多了，距离我上次更新《如何用 obsidian 和 flomo 搭建知识体系》已经过去一年半了，重新看了一遍以前写的内容，当时选择 obsidian 的优点，现在依然成立。 特别</description>
+    </item>
+    
+    <item>
+      <title>Clash for Windows 配置文件预处理(parser)</title>
       <link>/post/clash_parser/</link>
       <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
       
