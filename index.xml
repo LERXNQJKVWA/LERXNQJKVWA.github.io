@@ -5,7 +5,55 @@
     <description>Recent content on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>一些有意思的博客</title>
+    <link>/post/blog_list/</link>
+    <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
+    
+    <guid>/post/blog_list/</guid>
+    <description>
+        &lt;p&gt;今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2023-08-31 &lt;a href=&#34;https://maeiee-garden.vercel.app/&#34;&gt;Maeiee 数字花园&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-08-15 &lt;a href=&#34;https://www.owenyoung.com/&#34;&gt;Owen的博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>一些碎碎念</title>
+    <link>/post/memos/</link>
+    <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
+    
+    <guid>/post/memos/</guid>
+    <description>
+        &lt;blockquote&gt;
+&lt;p&gt;2023-08-31&lt;/p&gt;
+&lt;p&gt;这两天在玩 &lt;a href=&#34;https://www.twosapp.com&#34;&gt;Twos App&lt;/a&gt; ，没想到 2023 年了还能有新的有意思的待办软件出来，我甚至都放到手机的首屏了，所以这还真是一个可持续的游戏领域呢。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2023-08-09&lt;/p&gt;
+&lt;p&gt;有时候觉得自己真的很懒散，干正经事的时间非常少。&lt;br&gt;
+喜欢东搞搞西搞搞，关注的东西很多，但是比较浅。&lt;br&gt;
+有时候又好像会强迫症犯了鸡血一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近真的好歌荒哦，已经很久没有那种听到一首喜欢的歌，很快乐的感觉了。&lt;br&gt;
+宇宙快点给我发点 match 的歌。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当一个事情进入你的视野的时候，你会发现生活里到处都是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2023-08-02&lt;br&gt;
+最近用 obsidian 真的好快乐&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    </description>
+    </item>
+    
     <item>
     <title>用 obsidian 两年多，现在我怎么同步和使用？</title>
     <link>/post/obsidian2023/</link>
@@ -311,34 +359,6 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
         &lt;p&gt;&lt;a href=&#34;http://seyee.co/post/why_blog/&#34;&gt;《为什么写博客》&lt;/a&gt; 写到，有时候逛到有意思的博客会自己也想做。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.owenyoung.com&#34;&gt;https://www.owenyoung.com&lt;/a&gt; 就是其一，参考他里面的各种链接，我也想弄一个系列用来放自己近期看过的好玩的东西。&lt;/p&gt;
 &lt;p&gt;那么推荐的第一个链接就是这个博客。博主是最近很火的一款沉浸式翻译的作者。&lt;/p&gt;
-
-    </description>
-    </item>
-    
-    <item>
-    <title>一些碎碎念</title>
-    <link>/post/memos/</link>
-    <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate>
-    
-    <guid>/post/memos/</guid>
-    <description>
-        &lt;blockquote&gt;
-&lt;p&gt;2023-08-09&lt;/p&gt;
-&lt;p&gt;有时候觉得自己真的很懒散，干正经事的时间非常少。&lt;br&gt;
-喜欢东搞搞西搞搞，关注的东西很多，但是比较浅。&lt;br&gt;
-有时候又好像会强迫症犯了鸡血一下。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;最近真的好歌荒哦，已经很久没有那种听到一首喜欢的歌，很快乐的感觉了。&lt;br&gt;
-宇宙快点给我发点 match 的歌。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;当一个事情进入你的视野的时候，你会发现生活里到处都是。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2023-08-02&lt;br&gt;
-最近用 obsidian 真的好快乐&lt;/p&gt;
-&lt;/blockquote&gt;
 
     </description>
     </item>
