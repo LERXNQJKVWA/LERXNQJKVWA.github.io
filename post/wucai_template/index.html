@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="dark" />
   
-  <title>我的相册整理｜ios 端 | Seyee&#39;s Blog</title>
+  <title>我的五彩同步 obsidian 模板 — 结合更新的 property 功能 | Seyee&#39;s Blog</title>
   <meta name="keywords" content="Seyee,blog,博客" />
   <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
   <meta name="author" content="Seyee" />
@@ -86,7 +86,7 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>我的相册整理｜ios 端</h1>
+                    <h1>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</h1>
                     <div class="post-meta">
                         
                             
@@ -95,17 +95,21 @@
                                 
                                   
                                 
-                                By Seyee | <time>created 2022-06-20</time>
+                                By Seyee | <time>created 2023-09-02</time>
                                 <time></time>
-                                | 1440 words 
-                                | 3 minutes 
+                                | 516 words 
+                                | 2 minutes 
                             </div>
                         
                        
                         <div class="tags">
                             
                             
-                            <a href="/tags/app/">App</a>
+                            <a href="/tags/obsidian/">Obsidian</a>
+                            
+                            
+                            
+                            <a href="/tags/%E4%BA%94%E5%BD%A9/">五彩</a>
                             
                             
                         </div>
@@ -116,71 +120,115 @@
     </article>
 
     <div class="article-post">
-    <p>去年把照片从第三方云盘下载到 iPhone 本地了，因为有时候网络差在云盘找照片很慢，而且不管是读书笔记、剪藏的文章还是照片，现在我都倾向于轻整理，尽量用搜索而不是大量的手动分类工作。正好我把照片下载到本地后不久 ios15 有了「实况文本」的功能，不得不说省了不少事。简单说一下我的情况：手机上有近 4 万张照片，主要需求是按时间查找某个时期的生活照或者具体某个人或物的图，虽然会存一些好看的插图但是没有专业素材管理需求。</p>
-<p>我怎么整理和查找照片？</p>
-<h3 id="ios-自带功能实况文本和搜索">
-    <a href="#ios-%e8%87%aa%e5%b8%a6%e5%8a%9f%e8%83%bd%e5%ae%9e%e5%86%b5%e6%96%87%e6%9c%ac%e5%92%8c%e6%90%9c%e7%b4%a2" class="anchor_txt">
-        ios 自带功能：实况文本和搜索
+    <p>因为 obsidian 1.4.5 版本更新的 property 功能，把五彩的模板也一起更新了一下。 <mark>（全部代码在最后可复制）</mark></p>
+<h3 id="结合-property-后的模板有什么优势">
+    <a href="#%e7%bb%93%e5%90%88-property-%e5%90%8e%e7%9a%84%e6%a8%a1%e6%9d%bf%e6%9c%89%e4%bb%80%e4%b9%88%e4%bc%98%e5%8a%bf" class="anchor_txt">
+        结合 property 后的模板有什么优势
     </a>
     
 </h3>
-<p>有天微博上有网友想要我的壁纸，我直接搜索「心跳一起」的关键词一秒找到了想要的图。还有一些智能关键词识别物体，比如搜索「猫」就能找到含有猫的图，类似的关键词还有食物等等。以前我会单独给拍的食物建一个相册，现在不需要手动整理了。</p>
-<p><img loading="lazy" 
-    src="https://cdn.sspai.com/2022/06/20/article/8cb67ff8dbd21b3f54539d29e723ab1d?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" 
+<p>主要就是颜值上的提升，比如这是一张我以前同步的笔记的截图，可以看到如果 <code>url</code> 稍微长一点就会占很多位置。<br>
+<img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/msgid-3ab4477c492abe5a9df7f5cbb58111e1-d9428030.png" 
     alt="" 
      /></p>
-<h3 id="hashphotos">
-    <a href="#hashphotos" class="anchor_txt">
-        HashPhotos
+<p>现在的则会自动省略后面的部分。</p>
+<p><img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/msgid-a681671d90a8328249f4b6746671b88c-ae6061cf.png" 
+    alt="" 
+     /></p>
+<h3 id="一些解释">
+    <a href="#%e4%b8%80%e4%ba%9b%e8%a7%a3%e9%87%8a" class="anchor_txt">
+        一些解释
     </a>
     
 </h3>
-<p>价格：下载免费，有些功能需要购买付费包，当时我从云盘下载的一些老照片时间错乱了，想用它批量调整照片的时间，直接选了 30 元买断。HashPhotos 的优点有：</p>
-<h4 id="1-时间轴">
-    <a href="#1-%e6%97%b6%e9%97%b4%e8%bd%b4" class="anchor_txt">
-        1. 时间轴
-    </a>
-    
-</h4>
-<p>这是 hashPhotos 上我最喜欢的功能，在列表视图的照片间有一个日期格子，点击后可以给这一天加上一个关键词，就会出现在时间轴上。设想一下你想找一张你知道大致日期的图，比如你去某个地方旅游的照片，以前的做法是给这些照片添加一个相册，但是时间长了会有一堆相册，翻起来很慢。而且如果不是像旅游这种会拍很多照片的活动，只是和朋友小聚一下，为了几张照片专门建个相册没有必要。</p>
-<p><img loading="lazy" 
-    src="https://cdn.sspai.com/2022/06/20/article/9e06f8837e8707031186752b83d82268?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" 
-    alt="" 
-     /></p>
-<p>开始用 HashPhotos 后，我会在一些出去玩的日期上标上活动主题，比如“2022 五一深圳”，在时间轴上就能很清晰地看到最近几年自己有什么回忆，非常满足和有仪式感。有时候看电视剧遇到自己喜欢的场景或者台词我也会在截图的日期上标上剧名。</p>
-<h4 id="2-删除重复相似照片">
-    <a href="#2-%e5%88%a0%e9%99%a4%e9%87%8d%e5%a4%8d%e7%9b%b8%e4%bc%bc%e7%85%a7%e7%89%87" class="anchor_txt">
-        2. 删除重复、相似照片
-    </a>
-    
-</h4>
-<p>从第三方云盘下载所有的照片后，因为有一些照片以前备份过，本地没有删除，导致手机上有大量的重复照片，HashPhotos 有删除重复和相似照片的功能，可以同时对比一些尺寸、时间等参数，选择最佳的留下来。删除重复照片的软件有很多，比如 Gemini photos（有试用期）、减法相册（去重功能付费），还有一些云相册软件腾讯相册管家、一刻相册，HashPhotos 这个功能是免费的。如果和我一样有大量删除重复图片的需求，不嫌麻烦可以全部下载下来清理一遍，因为每个软件的查重算法和准确度都不太一样。</p>
-<p>除此之外，我还有一个方法查重：利用 ios 的人脸识别。有时候手机上存了喜欢的明星的图，时间长了难免会有重复的，按脸看照片就很容易看到哪些重复了。</p>
-<p>2023-08-15 更新 ios16 后也可以进行一部分查重</p>
-<h4 id="3-相册标签备忘录等多维度管理系统">
-    <a href="#3-%e7%9b%b8%e5%86%8c%e6%a0%87%e7%ad%be%e5%a4%87%e5%bf%98%e5%bd%95%e7%ad%89%e5%a4%9a%e7%bb%b4%e5%ba%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f" class="anchor_txt">
-        3. 相册、标签、备忘录等多维度管理系统
-    </a>
-    
-</h4>
-<p>一直不喜欢 ios 自带的相册，封面太大，导致一屏可以看的数量很少，而且横滑翻页还挺反人类的。HashPhotos 左滑可以看到所有相册，非常清晰。通过打标签、给单张照片写备忘录后还可以建多种条件筛选的智能相册，不过自从我用了时间轴后就几乎不会特意给照片做分类了，这几种方式都用的比较少，ios 自带也可以写备注，用全局搜索更方便，有时候还会无意搜到遗忘的照片。</p>
-<p><img loading="lazy" 
-    src="https://cdn.sspai.com/2022/06/20/article/aeb91bdb05f61261166bbf0c921f2fb0?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" 
-    alt="" 
-     /></p>
-<h3 id="slidebox">
-    <a href="#slidebox" class="anchor_txt">
-        Slidebox
+<ol>
+<li><code>{% if trimtags %}tags: {{trimtags | replace(&quot;星标&quot;, &quot;五彩星标&quot;)}}{% endif %}</code> 进行了判断是否有 tags，不生成空的属性。<code>| replace(&quot;星标&quot;, &quot;五彩星标&quot;)</code> 是因为对默认的星标名称做了替换，改成五彩星标。</li>
+<li><code>pagenote: |- {{pagenote|replace(r/\n/g, &quot;\n  &quot;)}}{% endif %}</code>，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。</li>
+<li>官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 <code>css snippet</code> 全部显示，代码也放到后面。怎么使用 snippet 可以参考 <a href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/">Obsidian 的 CSS 代码片段</a></li>
+</ol>
+<h3 id="全部代码">
+    <a href="#%e5%85%a8%e9%83%a8%e4%bb%a3%e7%a0%81" class="anchor_txt">
+        全部代码
     </a>
     
 </h3>
-<p>用 HashPhotos 清理过后就是日常的维护了，我一般用 Slidebox 删除日常的无用照片，可能有人疑惑删照片还需要专门下载一个 App 吗？只要用了就会发现操作比自带相册顺畅多了，用自带相册每次删照片都要进行删除确认，多选删除的话有些图看不清内容又要切换到大图。</p>
-<p><img loading="lazy" 
-    src="https://cdn.sspai.com/2022/06/20/article/7a2f51fb738d2f890eabe929c031af48?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" 
-    alt="" 
-     /></p>
-<p>用 Slidebox 只需要用上滑下滑的手势就可以，像我这种喜欢截图随手拍照的人来说，现在上下班路上都习惯打开 Slidebox 删除最近不需要保存的图，经常随手就删掉几十张，非常解压和有成就感。删得差不多了再点右上角按钮就可以同步删除本地图片。</p>
-
+<h4 id="五彩模板">
+    <a href="#%e4%ba%94%e5%bd%a9%e6%a8%a1%e6%9d%bf" class="anchor_txt">
+        五彩模板
+    </a>
+    
+</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">url: <span class="o">{{</span>url<span class="o">}}</span>
+</span></span><span class="line"><span class="cl">wucai_url: <span class="o">{{</span>wucaiurl<span class="o">}}</span>
+</span></span><span class="line"><span class="cl">创建时间: <span class="o">{{</span>createat<span class="o">}}</span>
+</span></span><span class="line"><span class="cl">更新时间: <span class="o">{{</span>updateat<span class="o">}}</span>
+</span></span><span class="line"><span class="cl">highlightcount: <span class="o">{{</span>highlightcount<span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> trimtags %<span class="o">}</span>tags: <span class="o">{{</span>trimtags <span class="p">|</span> replace<span class="o">(</span><span class="s2">&#34;#星标&#34;</span>, <span class="s2">&#34;#五彩星标&#34;</span><span class="o">)}}{</span>% endif %<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> pagenote %<span class="o">}</span>pagenote: <span class="p">|</span>-
+</span></span><span class="line"><span class="cl">  <span class="o">{{</span>pagenote<span class="p">|</span>replace<span class="o">(</span>r/<span class="se">\n</span>/g, <span class="s2">&#34;\n  &#34;</span><span class="o">)}}{</span>% endif %<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## highlights</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% block highlights %<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">for</span> item in highlights %<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> item <span class="p">|</span> style1<span class="o">({</span>prefix:<span class="s2">&#34;&gt; &#34;</span>, anno:<span class="s2">&#34;&gt; #notes &#34;</span>, color:<span class="s2">&#34;&#34;</span><span class="o">})</span> <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% endfor %<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% endblock %<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="显示全部-property-的-snippet-片段">
+    <a href="#%e6%98%be%e7%a4%ba%e5%85%a8%e9%83%a8-property-%e7%9a%84-snippet-%e7%89%87%e6%ae%b5" class="anchor_txt">
+        显示全部 property 的 snippet 片段
+    </a>
+    
+</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">metadata-input-longtext</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">empty</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">max-height</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
     
 </div>
@@ -189,17 +237,12 @@
     
     <nav class="flex container suggested">
         
-        <a rel="prev" href="/post/do_nothing/" title="Previous post (older)">
+        <a rel="prev" href="/post/blog_list/" title="Previous post (older)">
             <span>Previous</span>
-            当我什么都不想做
+            一些有意思的博客
             </a>
         
         
-        
-        <a rel="next" href="/post/wucai/" title="Next post (newer)">
-            <span>Next</span>
-            如何在网页上划线和批注？推荐五彩插件
-            </a> 
         
     </nav>
     
@@ -229,45 +272,40 @@
         </summary>
 
         <div class="inner"><ul>
-                <li><h3 id="ios-自带功能实况文本和搜索">
-    <a href="#ios-%e8%87%aa%e5%b8%a6%e5%8a%9f%e8%83%bd%e5%ae%9e%e5%86%b5%e6%96%87%e6%9c%ac%e5%92%8c%e6%90%9c%e7%b4%a2" class="anchor_txt">
-        ios 自带功能：实况文本和搜索
+                <li><h3 id="结合-property-后的模板有什么优势">
+    <a href="#%e7%bb%93%e5%90%88-property-%e5%90%8e%e7%9a%84%e6%a8%a1%e6%9d%bf%e6%9c%89%e4%bb%80%e4%b9%88%e4%bc%98%e5%8a%bf" class="anchor_txt">
+        结合 property 后的模板有什么优势
     </a>
     
 </h3></li>
-                <li><h3 id="hashphotos">
-    <a href="#hashphotos" class="anchor_txt">
-        HashPhotos
+                <li><h3 id="一些解释">
+    <a href="#%e4%b8%80%e4%ba%9b%e8%a7%a3%e9%87%8a" class="anchor_txt">
+        一些解释
+    </a>
+    
+</h3></li>
+                <li><h3 id="全部代码">
+    <a href="#%e5%85%a8%e9%83%a8%e4%bb%a3%e7%a0%81" class="anchor_txt">
+        全部代码
     </a>
     
 </h3><ul>
                         
-                <li><h4 id="1-时间轴">
-    <a href="#1-%e6%97%b6%e9%97%b4%e8%bd%b4" class="anchor_txt">
-        1. 时间轴
+                <li><h4 id="五彩模板">
+    <a href="#%e4%ba%94%e5%bd%a9%e6%a8%a1%e6%9d%bf" class="anchor_txt">
+        五彩模板
     </a>
     
 </h4></li>
-                <li><h4 id="2-删除重复相似照片">
-    <a href="#2-%e5%88%a0%e9%99%a4%e9%87%8d%e5%a4%8d%e7%9b%b8%e4%bc%bc%e7%85%a7%e7%89%87" class="anchor_txt">
-        2. 删除重复、相似照片
+                <li><h4 id="显示全部-property-的-snippet-片段">
+    <a href="#%e6%98%be%e7%a4%ba%e5%85%a8%e9%83%a8-property-%e7%9a%84-snippet-%e7%89%87%e6%ae%b5" class="anchor_txt">
+        显示全部 property 的 snippet 片段
     </a>
     
-</h4></li>
-                <li><h4 id="3-相册标签备忘录等多维度管理系统">
-    <a href="#3-%e7%9b%b8%e5%86%8c%e6%a0%87%e7%ad%be%e5%a4%87%e5%bf%98%e5%bd%95%e7%ad%89%e5%a4%9a%e7%bb%b4%e5%ba%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f" class="anchor_txt">
-        3. 相册、标签、备忘录等多维度管理系统
-    </a>
-    
-</h4></li></ul>
+</h4>
                 </li>
-                <li><h3 id="slidebox">
-    <a href="#slidebox" class="anchor_txt">
-        Slidebox
-    </a>
-    
-</h3>
-                </li>
+            </ul>
+            </li>
             </ul>
         </div>
         </details>

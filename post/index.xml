@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 31 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</title>
+      <link>/post/wucai_template/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/wucai_template/</guid>
+      <description>因为 obsidian 1.4.5 版本更新的 property 功能，把五彩的模板也一起更新了一下。 （全部代码在最后可复制） 结合 property 后的模板有什么优势 主要就是颜值上的提升，比如这是一张我</description>
+    </item>
+    
     <item>
       <title>一些有意思的博客</title>
       <link>/post/blog_list/</link>
