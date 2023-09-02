@@ -25,7 +25,7 @@
     src=&#34;https://wucaiimg.dotalk.cn/wxmedia/msgid-3ab4477c492abe5a9df7f5cbb58111e1-d9428030.png&#34; 
     alt=&#34;&#34; 
      /&gt;&lt;/p&gt;
-&lt;p&gt;现在的则会自动省略后面的部分。&lt;/p&gt;
+&lt;p&gt;现在的样式有超长省略，更简洁。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; 
     src=&#34;https://wucaiimg.dotalk.cn/wxmedia/msgid-a681671d90a8328249f4b6746671b88c-ae6061cf.png&#34; 
     alt=&#34;&#34; 
@@ -84,7 +84,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;创建时间: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;createat&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;更新时间: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;updateat&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;highlightcount: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;highlightcount&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; trimtags %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;tags: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;trimtags &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#星标&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;#五彩星标&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; trimtags %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;tags: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;trimtags &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;星标&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;五彩星标&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; pagenote %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;pagenote: &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;-
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;pagenote&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;r/&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;/g, &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n  &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
