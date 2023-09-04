@@ -6,7 +6,16 @@
     <description>Recent content in workflowy on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/workflowy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/workflowy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>workflowy 自定义 css</title>
+      <link>/post/workflowy_style/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/workflowy_style/</guid>
+      <description>使用 WFx插件 可以全局修改 workflowy 的 css（包括移动端） 改了一个 todo 的样式，如果点击完成，则会在前面加上一个完成的图标，并且去掉官方的删除线样式。预</description>
+    </item>
+    
     <item>
       <title>我的 workflowy 使用分享</title>
       <link>/post/workflowy/</link>

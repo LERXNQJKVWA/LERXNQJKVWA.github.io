@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="dark" />
   
-  <title>Seyee&#39;s Blog</title>
+  <title>workflowy 自定义 css | Seyee&#39;s Blog</title>
   <meta name="keywords" content="Seyee,blog,博客" />
   <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
   <meta name="author" content="Seyee" />
@@ -81,141 +81,106 @@
 
         <main>
             
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>workflowy 自定义 css</h1>
+                    <div class="post-meta">
+                        
+                            
+                            <div>
+                                
+                                
+                                  
+                                
+                                By Seyee | <time>created 2023-09-04</time>
+                                <time></time>
+                                | 127 words 
+                                | 1 minutes 
+                            </div>
+                        
+                       
+                        <div class="tags">
+                            
+                            <a href="/tags/workflowy/">workflowy</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
 
+    <div class="article-post">
+    <p>使用 WFx插件 可以全局修改 workflowy 的 css（包括移动端）</p>
+<p>改了一个 todo 的样式，如果点击完成，则会在前面加上一个完成的图标，并且去掉官方的删除线样式。预览如下（上面是使用后，下面是使用前）：</p>
+<p><img loading="lazy" 
+    src="https://wucaiimg.dotalk.cn/wxmedia/msgid-7272982b9eda2b822c0663690b6f2658-26e52b74.png" 
+    alt="" 
+     /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* done */</span>
+</span></span><span class="line"><span class="cl"> <span class="p">.</span><span class="nc">done</span> <span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">done</span> <span class="p">.</span><span class="nc">content</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;✅&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    
+</div>
 
-
-
-<header>
-  <div class="container">
-    <h1>Posts</h1>
-    <p class="subtitle">
-      <span class="count">14</span> posts found.
-    </p>
-  </div>
-</header>
-
-<section>
-  <div class="container">
-    <section>
-      <section>
-        <div class="posts">
-          
-          <div class="post">
-            <a href="/post/workflowy_style/">
-              <div class="post-row">
-                <h3>workflowy 自定义 css</h3>
-                <time>2023-09-04</time>
-              </div>
-              
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/post/wucai_template/" title="Previous post (older)">
+            <span>Previous</span>
+            我的五彩同步 obsidian 模板 — 结合更新的 property 功能
             </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/wucai_template/">
-              <div class="post-row">
-                <h3>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</h3>
-                <time>2023-09-02</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/blog_list/">
-              <div class="post-row">
-                <h3>一些有意思的博客</h3>
-                <time>2023-08-31</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/memos/">
-              <div class="post-row">
-                <h3>一些碎碎念</h3>
-                <time>2023-08-31</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/obsidian2023/">
-              <div class="post-row">
-                <h3>用 obsidian 两年多，现在我怎么同步和使用？</h3>
-                <time>2023-08-28</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/clash_parser/">
-              <div class="post-row">
-                <h3>Clash for Windows 配置文件预处理(parser)</h3>
-                <time>2023-08-17</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/link2023-08-15/">
-              <div class="post-row">
-                <h3>2023-08-15 各种链接</h3>
-                <time>2023-08-15</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/learning/">
-              <div class="post-row">
-                <h3>什么才是真正学会了？</h3>
-                <time>2023-07-07</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/why_blog/">
-              <div class="post-row">
-                <h3>为什么写博客</h3>
-                <time>2023-06-07</time>
-              </div>
-              
-            </a>
-          </div>
-          
-          <div class="post">
-            <a href="/post/wucai/">
-              <div class="post-row">
-                <h3>如何在网页上划线和批注？推荐五彩插件</h3>
-                <time>2023-04-24</time>
-              </div>
-              
-            </a>
-          </div>
-          
-        </div>
-      </section>
-    </section>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <nav class="pagination">
-      <div class="next-page">
-        <a href="/post/page/2/">Next Page</a>
-      </div>
-      
+        
+        
+        
     </nav>
-  </div>
-</section>
+    
+</div>
+ 
+<div class="container">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@latest"></script>
+<div id="waline"></div>
 
+<script>
+  Waline({
+      el: '#waline',
+      serverURL: 'https:\/\/comment.seyee.co\/',
+      placeholder: '不想买服务器，请开魔法翻墙评论~',
+      meta: ["nick","mail"]
+  });
+</script>
+
+
+</div>
+
+
+</main>
 
 
         </main>
