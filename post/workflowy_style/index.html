@@ -97,7 +97,7 @@
                                 
                                 By Seyee | <time>created 2023-09-04</time>
                                 <time></time>
-                                | 127 words 
+                                | 231 words 
                                 | 1 minutes 
                             </div>
                         
@@ -120,6 +120,12 @@
     src="https://wucaiimg.dotalk.cn/wxmedia/msgid-7272982b9eda2b822c0663690b6f2658-26e52b74.png" 
     alt="" 
      /></p>
+<h4 id="普通的-bullets-的完成样式">
+    <a href="#%e6%99%ae%e9%80%9a%e7%9a%84-bullets-%e7%9a%84%e5%ae%8c%e6%88%90%e6%a0%b7%e5%bc%8f" class="anchor_txt">
+        普通的 bullets 的完成样式
+    </a>
+    
+</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -130,14 +136,46 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* done */</span>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 去掉删除线 */</span>
 </span></span><span class="line"><span class="cl"> <span class="p">.</span><span class="nc">done</span> <span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 前面加个图标，不想加可以去掉 */</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">done</span> <span class="p">.</span><span class="nc">content</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;✅&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="todo-的完成样式带复选框的节点">
+    <a href="#todo-%e7%9a%84%e5%ae%8c%e6%88%90%e6%a0%b7%e5%bc%8f%e5%b8%a6%e5%a4%8d%e9%80%89%e6%a1%86%e7%9a%84%e8%8a%82%e7%82%b9" class="anchor_txt">
+        todo 的完成样式（带复选框的节点）
+    </a>
+    
+</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 去掉删除线 */</span>
+</span></span><span class="line"><span class="cl"> <span class="p">.</span><span class="nc">done</span><span class="p">.</span><span class="nc">checkmark</span> <span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 前面加个图标，不想加可以去掉 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">done</span><span class="p">.</span><span class="nc">checkmark</span> <span class="p">.</span><span class="nc">content</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;✅&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
@@ -178,7 +216,92 @@
 
 
 </div>
+<aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
 
+        <div class="inner"><ul>
+                <li><h4 id="普通的-bullets-的完成样式">
+    <a href="#%e6%99%ae%e9%80%9a%e7%9a%84-bullets-%e7%9a%84%e5%ae%8c%e6%88%90%e6%a0%b7%e5%bc%8f" class="anchor_txt">
+        普通的 bullets 的完成样式
+    </a>
+    
+</h4></li>
+                <li><h4 id="todo-的完成样式带复选框的节点">
+    <a href="#todo-%e7%9a%84%e5%ae%8c%e6%88%90%e6%a0%b7%e5%bc%8f%e5%b8%a6%e5%a4%8d%e9%80%89%e6%a1%86%e7%9a%84%e8%8a%82%e7%82%b9" class="anchor_txt">
+        todo 的完成样式（带复选框的节点）
+    </a>
+    
+</h4>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
 
 </main>
 
