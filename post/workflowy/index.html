@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="dark" />
+  
+  <title>我的 workflowy 使用分享 | Seyee&#39;s Blog</title>
+  <meta name="keywords" content="Seyee,blog,博客" />
+  <meta name="description" content="Seyee&#39;s Blog,Seyee 的博客。记录学习笔记以及过程中踩过的坑" />
+  <meta name="author" content="Seyee" />
+  
+  
+  
+  <link rel="stylesheet" href="/sass/main.min.64fa4319449fe5f3c3b1969149425f4037c38ece01a2c7f84880a55ee9d989b8.css" />
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+  
+</head>
+
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    <span class="emoji">
+                        😘
+                    </span>
+                    
+                    
+                    Seyee&#39;s Blog
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/tags/">tags</a>
+                
+                <a href="/index.xml">rss</a>
+                
+                <a href="/about/">about</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>我的 workflowy 使用分享</h1>
+                    <div class="post-meta">
+                        
+                            
+                            <div>
+                                
+                                
+                                  
+                                
+                                By Seyee | <time>created 2023-02-20</time>
+                                <time>
+                                    | edited 2023-09-04
+                                    </time>
+                                | 4546 words 
+                                | 10 minutes 
+                            </div>
+                        
+                       
+                        <div class="tags">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p>可能很多人都没听过 workflowy，它是一款大纲笔记软件，已经有十几年的历史了，好用的东西不能我一个人知道，所以写一篇自来水文章安利。</p>
+<p>2023-09-04 更新：我的笔记系统主力是 obsidian，五彩同步也迁移到 obsidian 没有同步到 workflowy。但是有一些很碎片，手机上经常需要打开的内容，还有文章的大纲草稿，会优先放在 workflowy 里。</p>
+<p>workflowy 偏向于收集箱的角色，但是个人时间轴的用法依然是在 workflowy 里，大纲在 obsidian 里的体验不如 workflowy 。</p>
+<h3 id="为什么是-workflowy-">
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af-workflowy-" class="anchor_txt">
+        为什么是 workflowy ？
+    </a>
+    
+</h3>
+<p><strong>一句话介绍 workflowy 的核心优点：大纲结构，搜索强大，整理简单</strong></p>
+<p>放一张图展示它和 obsidian 的搜索结果对比：</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/0eda47b9452472bca73002b4ab6012a4.JPEG" 
+    alt="https://cdn.sspai.com/2023/02/19/0eda47b9452472bca73002b4ab6012a4.JPEG" 
+     /></p>
+<p>左 workflowy ，右 obsidian （2023-09-04 obsidian 现在有插件可以实现类似的效果）</p>
+<p>可以看到 workflowy 直接展示搜索条件下的段落，并且能看到它上级节点的内容。 obsidian 这种展示形式代表了市面上大部分的笔记软件（举 obsidian 做例子只是因为它是我另一款高强度使用的笔记软件，两者使用场景不一样，绝对不是为了黑 obsidian），要么是折叠起来得根据标题挨个点进页面查找内容，如果展开搜索结果平铺查看，在侧边栏这个小小的区域看又很不爽。</p>
+<p>虽然 obsidian 有各种 dataview、反链可以做到在屏幕中间区域展示搜索结果，但是和简单的快捷键就能做到的 workflowy 比起来，obsidian 上的操作还是麻烦了一点，我是很懒的人，可以点一次就不想点两次。</p>
+<p>联想到这就是 flomo 的搜索用起来很舒服的原因：**直接把搜索结果平铺展示出来，一目了然。**而 workflowy 的结果展示要更胜一筹，因为它自带大纲结构，同时能看到结果属于哪个父节点（可以理解为分类或者文件夹），不想看这个分类下的节点可以直接折叠起来。</p>
+<blockquote>
+<p>整理究竟是目的，还是路径？</p>
+<p>任何一个好的系统都不应该耗费你大量的时间去维护，一旦你需要不断地「定期」维护一个系统，那么就违背了系统的初衷 —— 整理东西本身并不能产生太大的价值，除了耗费时间。</p>
+<p><a href="https://mp.weixin.qq.com/s/42rDxI2qIz3t7llP-GA_Yw">《flomo weekly vol.28：我们真的需要整理标签么？》</a></p>
+</blockquote>
+<p>如果你看了这段话觉得 workflowy 平平无奇，没有什么特别的，下面再分享一下我的用法。</p>
+<h4 id="我的用法">
+    <a href="#%e6%88%91%e7%9a%84%e7%94%a8%e6%b3%95" class="anchor_txt">
+        我的用法
+    </a>
+    
+</h4>
+<h4 id="信息管理">
+    <a href="#%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" class="anchor_txt">
+        信息管理
+    </a>
+    
+</h4>
+<p>信息管理主要分为输入输出两个维度，相信很多朋友都会困扰这两部分怎么做到**融合又不相互干扰。**在一个笔记系统里放入太多剪藏的东西，那么在搜索的时候想找到目标内容会很慢，如果不放在一起，像我以前用 cubox + obsidian/flomo，需要两边各自搜索，太割裂体验感极差。</p>
+<p>现在 workflowy 帮我解决了这个问题。</p>
+<p>在我高强度用 workflowy 的时候，去年年底发现的网页高亮工具五彩插件实现了我提出的导出所有页面高亮的功能，同时保留了页面标题链接及其高亮的父子关系。五彩插件也是一个令人惊喜的工具，更新迭代非常快，和开发者交流过，是非常注意细节的团队，后续会逐步和其他笔记软件打通，下次再写一篇文章详细介绍。</p>
+<p>所以我现在的工作流是：</p>
+<ul>
+<li>cubox 作为渐进式总结的第一层，保留所有资料的完整全文，只做收集不做整理。（2023-09-04 更新，五彩有了全文剪藏的功能，cubox 已弃用）</li>
+<li>阅读的时候用五彩插件直接在网页上高亮，定期导出纯文本复制到 workflowy ，加上平时的零散笔记，所有碎片化的东西都汇总在 workflowy 里。</li>
+<li>obsidian 主要放主题完整的东西，比如自己写的长文章。</li>
+</ul>
+<p>cubox 以前的数据已经有 7 千多条了，这部分我已经一次性导出所有的链接复制到了 workflowy 里，新增的收藏以后也会定期处理。虽然 workflowy 有优雅的链接格式，但是我粘贴链接的时候会使用明文 url，这样可以用 http 搜索所有网址，而且只展示标题的样式迁移时容易丢失链接。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/cb2edb2fd448e7eaafd37b5770d00b5b.png" 
+    alt="https://cdn.sspai.com/2023/02/19/cb2edb2fd448e7eaafd37b5770d00b5b.png" 
+     /></p>
+<p>两种样式对比</p>
+<p>那么在我打算搜索资料的时候，先搜索自己的 workflowy ，在这个过程中，如果重新回看以前的内容，如果是可以淘汰掉的资料，就从 workflowy 里删掉，反正 cubox 里也有记录，这样既做了断舍离，又满足了自己的仓鼠症。都说知识要流动起来才算数，workflowy 的名字取得名副其实，很妙。我的 workflowy 就像一个私人搜索引擎、书签库、个人 wiki。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/6afa3a0058dc6a8ece9f8f59048f6a33.png" 
+    alt="https://cdn.sspai.com/2023/02/19/6afa3a0058dc6a8ece9f8f59048f6a33.png" 
+     /></p>
+<p>这张图又更新啦</p>
+<p>搜索资料前先搜索自己的 workflowy，是从博主也谈钱使用 flomo 的方法借鉴到的。</p>
+<blockquote>
+<p>也谈钱这么用卡片笔记：</p>
+<ol>
+<li>
+<p>平时有想法，先尽快写到本子上，或者备忘录里面记录下来。</p>
+</li>
+<li>
+<p>每天找个时间把所有的笔记整理到 flomo 中（当天记录当天整理，不然过几天可能就忘了当初写的是什么意思了。只在 flomo 里面储存长期内容，纸笔上的当天作废）</p>
+</li>
+</ol>
+<p>然后重点来了</p>
+<ol start="3">
+<li>整理每条笔记的时候，都要在 flomo 里面先搜一下关键词，看看有没有以往相关的卡片，然后把这个新笔记和以往相关的旧卡片链接起来（链接可以不止有一个）</li>
+</ol>
+</blockquote>
+<p>除了 cubox 链接、我的书签、五彩高亮等收藏链接的分类节点，我还会建立一个星标文章的节点，用来放优质的文章，这样展示搜索结果的时候可以和其他链接区分开，相当于加了一个权重，类似于 cubox 里的星标，也可以用 <code>#星标文章</code> 的标签维护。</p>
+<p><a href="https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8">https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8</a></p>
+<h4 id="维护一个自己的关键词列表">
+    <a href="#%e7%bb%b4%e6%8a%a4%e4%b8%80%e4%b8%aa%e8%87%aa%e5%b7%b1%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e5%88%97%e8%a1%a8" class="anchor_txt">
+        维护一个自己的关键词列表
+    </a>
+    
+</h4>
+<p>关于如何整理笔记有各种方法论，比如按文件夹、按标签分类、kg笔记法等等，看过我以前介绍工作流的文章的朋友都知道，我在 flomo、obsidian 上都搭建过 moc，但是时间长了都因为维护成本过高而不了了之，而且 obsidian 里面会有很多关键词的空页面。现在我在 workflowy 里手动维护了一个关键词列表，称之为关键词索引法，也是 moc 的一种吧。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/5419fbdff11711c6cdd816120204af82.png" 
+    alt="https://cdn.sspai.com/2023/02/19/5419fbdff11711c6cdd816120204af82.png" 
+     /></p>
+<p>不像使用标签分类需要手动给内容添加上一个个标签，我在 workflowy 建立一个关键词列表，把某个领域下的词都放到一起，关键词本身就是线索，每个节点都可以无限嵌套展开，不过我打算尽量不超过三级。搜索「渐进式总结」，可以看到所有包含「渐进式总结」的节点，并且搜索结果的节点和编辑时一样可以自由拖拽，在搜索的同时也可以随手进行整理。</p>
+<blockquote>
+<p>文字本身就是自己最好的标签系统。我认为我们应该把重点放在浮出已经在那里找到的关键词上，而不是标签。因为这里有一个问题：即使你用标签找到这个笔记，你仍然需要快速评估它的相关性。</p>
+<p><a href="https://www.notion.so/II-f0aac2738a484715b62c19e7f8a7c7a9?pvs=21">《渐进式总结 II：例子和比喻》</a></p>
+</blockquote>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/c0e744fd801ac4a2ceaa29b9140a860e.png" 
+    alt="https://cdn.sspai.com/2023/02/19/c0e744fd801ac4a2ceaa29b9140a860e.png" 
+     /></p>
+<h4 id="写-bullet-journal-流水账">
+    <a href="#%e5%86%99-bullet-journal-%e6%b5%81%e6%b0%b4%e8%b4%a6" class="anchor_txt">
+        写 bullet journal 流水账
+    </a>
+    
+</h4>
+<p>我有一个 daily 的节点，下面依次按年、月、周、日建立层级，通过搜索不同的关键词，查看不同时间跨度的关键信息，能够回顾某段时间做了什么，见了哪些朋友，看了什么书、电影等。以前我在很多软件里做过这件事，最后都因为不方便维护没有坚持下去。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/bce83a2278fcad0807f8434998990254.png" 
+    alt="https://cdn.sspai.com/2023/02/19/bce83a2278fcad0807f8434998990254.png" 
+     /></p>
+<p>检索电影标签</p>
+<ol>
+<li>notion database：笨重，数据多了检索起来卡顿。</li>
+<li>obsidian 的大纲：我尝试过把所有的 bullet journal 都写在一个 md 文件里，把用 h1 - h4 的格式区分年、月、周、日层级，在大纲目录里会生成一个大纲树。在 workflowy 里做这件事的不同是，obsidian 的搜索结果不是聚焦的，workflowy 的搜索结果可能一屏幕就展示完了，obsidian 得逐条定位到关键词所在行。</li>
+<li>滴答清单的时间轴、各种甘特图软件：和 notion 差不多，图表天然没有纯文本性能好，我最近真的喜欢纯文本，树结构的各种清单能满足大部分需求，不用搞那么多花里胡哨的，obsidian 的白板我都没怎么折腾，可能设计工作者会更需要。</li>
+</ol>
+<h4 id="项目管理">
+    <a href="#%e9%a1%b9%e7%9b%ae%e7%ae%a1%e7%90%86" class="anchor_txt">
+        项目管理
+    </a>
+    
+</h4>
+<p>使用标签平铺任务，不用做成树，点击 <code>#标签</code> 或者 <code>@标签名</code> 就能快速筛选出相关的任务。但是我发现项目管理没有那么重要，不管拆解的多好，用什么工具，不想做的事情还是不想做，所以这一部分我做的还比较粗糙。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/b6972a849f188aed98c5b5df05b60ea5.png" 
+    alt="https://cdn.sspai.com/2023/02/19/b6972a849f188aed98c5b5df05b60ea5.png" 
+     /></p>
+<p>随便举个例子</p>
+<h4 id="mirror">
+    <a href="#mirror" class="anchor_txt">
+        mirror
+    </a>
+    
+</h4>
+<p>等于 obsidian 等双链笔记里的嵌入引用，将一个节点 mirror 了一个新节点后，两处的内容就会关联同步，不管改了哪个，另一个都会同步修改。</p>
+<p>什么场景需要用 mirror 呢？</p>
+<p>比如《量化健身：动作精讲》这本书，可以放在 book 的节点下，再 mirror 一份在健身的节点下，这样我更新了书相关的笔记，在两个分类下都会自动同步内容。</p>
+<h4 id="怎么在-workflowy-里做卡片笔记">
+    <a href="#%e6%80%8e%e4%b9%88%e5%9c%a8-workflowy-%e9%87%8c%e5%81%9a%e5%8d%a1%e7%89%87%e7%ac%94%e8%ae%b0" class="anchor_txt">
+        怎么在 workflowy 里做卡片笔记
+    </a>
+    
+</h4>
+<p>《卡片笔记写作法》这本书火了之后，很多人都应用起了这个方法。但是我觉得不必追求「卡片」的形式，workflowy 里的每个节点都可以是“一张卡片”，下图是我导入的一条 flomo 数据。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/1dead54cd6e29ae2af0e35c0b792d8b4.jpeg" 
+    alt="https://cdn.sspai.com/2023/02/19/1dead54cd6e29ae2af0e35c0b792d8b4.jpeg" 
+     /></p>
+<h4 id="一些常用的搜索">
+    <a href="#%e4%b8%80%e4%ba%9b%e5%b8%b8%e7%94%a8%e7%9a%84%e6%90%9c%e7%b4%a2" class="anchor_txt">
+        一些常用的搜索
+    </a>
+    
+</h4>
+<ol>
+<li>或者运算符是大写的 OR，比如 WLB OR &ldquo;work-life balance&rdquo; 的搜索结果如下，这样我就可以把运算公式直接写在关键词列表里，整行选中搜索的结果，等于 obsidian 的 alias 别名功能。还可以用 - 符号排除某个关键词。</li>
+</ol>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/561f1353904e76fd39cc2b8a5ded6f0e.png" 
+    alt="https://cdn.sspai.com/2023/02/19/561f1353904e76fd39cc2b8a5ded6f0e.png" 
+     /></p>
+<ol>
+<li>如果按我的 daily 模板写日期，搜“周”是日维度，搜“月”是月维度</li>
+<li>以前我经常手动维护#书单标签，现在可以搜 《 ，里面大多是一些提到书名的内容。</li>
+<li>搜 http 大多是网址</li>
+<li>筛选出已完成的任务、某种颜色的文字等等</li>
+</ol>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/4fb562610c1cda74ec88b09b3d385f06.JPEG" 
+    alt="https://cdn.sspai.com/2023/02/19/4fb562610c1cda74ec88b09b3d385f06.JPEG" 
+     /></p>
+<h3 id="其它特点">
+    <a href="#%e5%85%b6%e5%ae%83%e7%89%b9%e7%82%b9" class="anchor_txt">
+        其它特点
+    </a>
+    
+</h3>
+<p>workflowy 的搜索设计就是我喜欢它的核心原因了，下面是一些笔记用户比较关心的问题。</p>
+<h4 id="有双链没有全局图谱">
+    <a href="#%e6%9c%89%e5%8f%8c%e9%93%be%e6%b2%a1%e6%9c%89%e5%85%a8%e5%b1%80%e5%9b%be%e8%b0%b1" class="anchor_txt">
+        有双链，没有全局图谱
+    </a>
+    
+</h4>
+<p>每个被引用的节点下面都可以看到反链列表，但是和 obsidian、logseq 等主流双链笔记相比没有全局图谱，也不像其它笔记的双链导出后有 [[]]，能够复用，workflowy 的双链导出会丢失链接，我现在更多用搜索，很少做双链了。</p>
+<h4 id="有看板视图可以嵌入列表">
+    <a href="#%e6%9c%89%e7%9c%8b%e6%9d%bf%e8%a7%86%e5%9b%be%e5%8f%af%e4%bb%a5%e5%b5%8c%e5%85%a5%e5%88%97%e8%a1%a8" class="anchor_txt">
+        有看板视图，可以嵌入列表
+    </a>
+    
+</h4>
+<p>这一个功能我不怎么用，以前也折腾过各种看板工具，都不顺手，workflowy 的看板算是很丝滑的了，只是我用过 workflowy 的大纲后发现看板不是我的必须品，还不如清单简洁。</p>
+<p><img loading="lazy" 
+    src="https://cdn.sspai.com/2023/02/19/c6feed828ee2be6508c6641433ce0f30.png" 
+    alt="https://cdn.sspai.com/2023/02/19/c6feed828ee2be6508c6641433ce0f30.png" 
+     /></p>
+<h4 id="纯文本方便迁移">
+    <a href="#%e7%ba%af%e6%96%87%e6%9c%ac%e6%96%b9%e4%be%bf%e8%bf%81%e7%a7%bb" class="anchor_txt">
+        纯文本，方便迁移
+    </a>
+    
+</h4>
+<p>开始用 obsidian 后，我就不怎么想选择无法迁移的笔记软件了，毕竟踩过印象笔记的坑。而 workflowy 虽然可以贴图、传文件，但是我觉得这些后续不好迁移，所以我就只用了纯文本，现在我的 workflowy 里有两万个节点，60 万字，导出 txt，opml 单文件都是无压力的。</p>
+<h4 id="颜值高交互流畅">
+    <a href="#%e9%a2%9c%e5%80%bc%e9%ab%98%e4%ba%a4%e4%ba%92%e6%b5%81%e7%95%85" class="anchor_txt">
+        颜值高，交互流畅
+    </a>
+    
+</h4>
+<p>workflowy 是我用过最丝滑的网页应用了，开发者审美也很在线。</p>
+<h3 id="缺点">
+    <a href="#%e7%bc%ba%e7%82%b9" class="anchor_txt">
+        缺点
+    </a>
+    
+</h3>
+<ol>
+<li>不适合写长文，这应该是大纲笔记的通病，比如这篇文章我本来在 workflowy 写的，结果排版的时候想哭，以后还是在 obsidian 里做。</li>
+<li>国内访问会有一点点慢，我常年挂工具不影响，这一点需要自己亲自体验速度是否能接受。</li>
+<li>插入的图片和文件无法导出，免费版也有储存容量限制，所以我一般不在 workflowy 放图，笔记需求里有大量图片的慎用。</li>
+<li>notes 显示一行。大纲结构类的笔记软件一般都会有个软回车的功能，主要用于对某行节点进行补充说明，又不想新开节点的时候，在 workflowy 按 shift + enter 触发，但是它只展示第一行， logseq 是全部展示的。如果习惯用 workflowy 的网页版，可以用 stylebot 这种自定义网页样式的浏览器插件解决。但是 notes 导入导出无法 100% 保持软回车格式不丢失，有时候会变成新的子节点（硬回车），所以我现在很少用 notes 。</li>
+<li>不支持代码块，涉及到代码的部分我还是会在 obsidian 完成。</li>
+<li>中英文混用时，英文两边得手动留空格，否则搜索这个英文单词会查找不到。</li>
+<li>自带日期格式无法调整。如果开启日期功能，输入 now 等自然语言可以快捷输入日期，但是我不喜欢它的格式，更习惯 2023-02-15 这种数字日期，所以我用输入法的快捷输入。每个输入法都可以设置 <code>rq</code> 或者其他缩写快速输入 2023-02-18 这种日期文本。</li>
+<li>某个节点下的子节点很多的话，一个节点滚动到 2 千条左右页面容易卡顿甚至卡死。</li>
+<li>没有导出成图片的分享方式，用 share 分享的链接在国内访问有点慢。</li>
+<li>没有开放 Api，否则像从五彩插件里导出都可以做同步插件，现在就只能手动处理。</li>
+<li>开发进度很慢，用户论坛里有一些几年前提的需求都没做，开发者的风格比较谨慎。混迹各种软件群，我发现很多人都很介意 App 的更新速度，目前的 workflowy 已经解决了我的刚需，所以我不介意，这一点自行斟酌。</li>
+</ol>
+<h3 id="最后">
+    <a href="#%e6%9c%80%e5%90%8e" class="anchor_txt">
+        最后
+    </a>
+    
+</h3>
+<p>现在我的工作流基本固定了，感到非常幸福，终于可以最大程度地减少整理的无用功，建立自己的知识小宇宙，所以把这套流程分享给大家，希望能对你有所帮助。另外我还建立了一个 workflowy 的微信群，整理了一个用 workflowy 搭建的群文档，有兴趣的话可以留言交流。</p>
+<p>可能很多人都没听过 workflowy，它是一款大纲笔记软件，已经有十几年的历史了，好用的东西不能我一个人知道，所以写一篇自来水文章安利。先说目前在我的笔记系统中 workflowy 的定位：碎片笔记 all in workflowy ，obsidian 里面会放完整主题的文章，高强度使用 workflowy 后 flomo 也用得少了，后期只会拿来写不涉及知识管理的心情碎碎念，flomo 的历史笔记我也全部导入 workflowy 了。</p>
+
+    </div>
+    
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/post/photo/" title="Previous post (older)">
+            <span>Previous</span>
+            我的相册整理｜ios 端
+            </a>
+        
+        
+        
+        <a rel="next" href="/post/wucai/" title="Next post (newer)">
+            <span>Next</span>
+            如何在网页上划线和批注？推荐五彩插件
+            </a> 
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@latest"></script>
+<div id="waline"></div>
+
+<script>
+  Waline({
+      el: '#waline',
+      serverURL: 'https:\/\/comment.seyee.co\/',
+      placeholder: '不想买服务器，请开魔法翻墙评论~',
+      meta: ["nick","mail"]
+  });
+</script>
+
+
+</div>
+<aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li><h3 id="为什么是-workflowy-">
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af-workflowy-" class="anchor_txt">
+        为什么是 workflowy ？
+    </a>
+    
+</h3><ul>
+                        
+                <li><h4 id="我的用法">
+    <a href="#%e6%88%91%e7%9a%84%e7%94%a8%e6%b3%95" class="anchor_txt">
+        我的用法
+    </a>
+    
+</h4></li>
+                <li><h4 id="信息管理">
+    <a href="#%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" class="anchor_txt">
+        信息管理
+    </a>
+    
+</h4></li>
+                <li><h4 id="维护一个自己的关键词列表">
+    <a href="#%e7%bb%b4%e6%8a%a4%e4%b8%80%e4%b8%aa%e8%87%aa%e5%b7%b1%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e5%88%97%e8%a1%a8" class="anchor_txt">
+        维护一个自己的关键词列表
+    </a>
+    
+</h4></li>
+                <li><h4 id="写-bullet-journal-流水账">
+    <a href="#%e5%86%99-bullet-journal-%e6%b5%81%e6%b0%b4%e8%b4%a6" class="anchor_txt">
+        写 bullet journal 流水账
+    </a>
+    
+</h4></li>
+                <li><h4 id="项目管理">
+    <a href="#%e9%a1%b9%e7%9b%ae%e7%ae%a1%e7%90%86" class="anchor_txt">
+        项目管理
+    </a>
+    
+</h4></li>
+                <li><h4 id="mirror">
+    <a href="#mirror" class="anchor_txt">
+        mirror
+    </a>
+    
+</h4></li>
+                <li><h4 id="怎么在-workflowy-里做卡片笔记">
+    <a href="#%e6%80%8e%e4%b9%88%e5%9c%a8-workflowy-%e9%87%8c%e5%81%9a%e5%8d%a1%e7%89%87%e7%ac%94%e8%ae%b0" class="anchor_txt">
+        怎么在 workflowy 里做卡片笔记
+    </a>
+    
+</h4></li>
+                <li><h4 id="一些常用的搜索">
+    <a href="#%e4%b8%80%e4%ba%9b%e5%b8%b8%e7%94%a8%e7%9a%84%e6%90%9c%e7%b4%a2" class="anchor_txt">
+        一些常用的搜索
+    </a>
+    
+</h4></li></ul>
+                </li>
+                <li><h3 id="其它特点">
+    <a href="#%e5%85%b6%e5%ae%83%e7%89%b9%e7%82%b9" class="anchor_txt">
+        其它特点
+    </a>
+    
+</h3><ul>
+                        
+                <li><h4 id="有双链没有全局图谱">
+    <a href="#%e6%9c%89%e5%8f%8c%e9%93%be%e6%b2%a1%e6%9c%89%e5%85%a8%e5%b1%80%e5%9b%be%e8%b0%b1" class="anchor_txt">
+        有双链，没有全局图谱
+    </a>
+    
+</h4></li>
+                <li><h4 id="有看板视图可以嵌入列表">
+    <a href="#%e6%9c%89%e7%9c%8b%e6%9d%bf%e8%a7%86%e5%9b%be%e5%8f%af%e4%bb%a5%e5%b5%8c%e5%85%a5%e5%88%97%e8%a1%a8" class="anchor_txt">
+        有看板视图，可以嵌入列表
+    </a>
+    
+</h4></li>
+                <li><h4 id="纯文本方便迁移">
+    <a href="#%e7%ba%af%e6%96%87%e6%9c%ac%e6%96%b9%e4%be%bf%e8%bf%81%e7%a7%bb" class="anchor_txt">
+        纯文本，方便迁移
+    </a>
+    
+</h4></li>
+                <li><h4 id="颜值高交互流畅">
+    <a href="#%e9%a2%9c%e5%80%bc%e9%ab%98%e4%ba%a4%e4%ba%92%e6%b5%81%e7%95%85" class="anchor_txt">
+        颜值高，交互流畅
+    </a>
+    
+</h4></li></ul>
+                </li>
+                <li><h3 id="缺点">
+    <a href="#%e7%bc%ba%e7%82%b9" class="anchor_txt">
+        缺点
+    </a>
+    
+</h3></li>
+                <li><h3 id="最后">
+    <a href="#%e6%9c%80%e5%90%8e" class="anchor_txt">
+        最后
+    </a>
+    
+</h3>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+        </nav>
+
+        
+    </section>
+    <script defer src="/ts/features.706a523ba43e6d0427c7fdf2b9d05dbd0920d3f12942b453690b495cb2522743.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>
