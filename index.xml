@@ -116,7 +116,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;{% if trimtags %}tags: {{trimtags | replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)}}{% endif %}&lt;/code&gt; 进行了判断是否有 tags，不生成空的属性。&lt;code&gt;| replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)&lt;/code&gt; 是因为对默认的星标名称做了替换，改成五彩星标。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;pagenote: |- {{pagenote|replace(r/\n/g, &amp;quot;\n  &amp;quot;)}}{% endif %}&lt;/code&gt;，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。&lt;/li&gt;
-&lt;li&gt;官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 &lt;code&gt;css snippet&lt;/code&gt; 全部显示，代码也放到后面。怎么使用 snippet 可以参考 &lt;a href=&#34;https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/&#34;&gt;Obsidian 的 CSS 代码片段&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 &lt;code&gt;css snippet&lt;/code&gt; 全部显示，代码也放到后面。怎么使用 snippet 可以参考 &lt;a href=&#34;https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obsidian 的 CSS 代码片段&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;全部代码&#34;&gt;
     &lt;a href=&#34;#%e5%85%a8%e9%83%a8%e4%bb%a3%e7%a0%81&#34; class=&#34;anchor_txt&#34;&gt;
@@ -211,10 +211,10 @@
     <description>
         &lt;p&gt;今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;2023-08-31 &lt;a href=&#34;https://maeiee-garden.vercel.app/&#34;&gt;Maeiee 数字花园&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2023-08-15 &lt;a href=&#34;https://www.owenyoung.com/&#34;&gt;Owen的博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2023-01-30 &lt;a href=&#34;https://www.pseudoyu.com/zh/&#34;&gt;Pseudoyu&lt;/a&gt;  关注有一段时间了，写了一个以前有记录的时间&lt;/li&gt;
-&lt;li&gt;2023-02-07 &lt;a href=&#34;http://xiangzongliang.com/&#34;&gt;向宗亮&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-08-31 &lt;a href=&#34;https://maeiee-garden.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maeiee 数字花园&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-08-15 &lt;a href=&#34;https://www.owenyoung.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Owen的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-01-30 &lt;a href=&#34;https://www.pseudoyu.com/zh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pseudoyu&lt;/a&gt;  关注有一段时间了，写了一个以前有记录的时间&lt;/li&gt;
+&lt;li&gt;2023-02-07 &lt;a href=&#34;http://xiangzongliang.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;向宗亮&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
     </description>
@@ -229,7 +229,7 @@
     <description>
         &lt;blockquote&gt;
 &lt;p&gt;2023-08-31&lt;/p&gt;
-&lt;p&gt;这两天在玩 &lt;a href=&#34;https://www.TwosApp.com?code=93263&#34;&gt;Twos App&lt;/a&gt; ，没想到 2023 年了还能有新的有意思的待办软件出来，我甚至都放到手机的首屏了，所以这还真是一个可持续的游戏领域呢。&lt;/p&gt;
+&lt;p&gt;这两天在玩 &lt;a href=&#34;https://www.TwosApp.com?code=93263&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twos App&lt;/a&gt; ，没想到 2023 年了还能有新的有意思的待办软件出来，我甚至都放到手机的首屏了，所以这还真是一个可持续的游戏领域呢。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2023-08-09&lt;/p&gt;
@@ -259,7 +259,7 @@
     
     <guid>/post/obsidian2023/</guid>
     <description>
-        &lt;p&gt;用 obsidian 已经两年多了，距离我上次更新 &lt;a href=&#34;https://sspai.com/post/71249&#34;&gt;《如何用 obsidian 和 flomo 搭建知识体系》&lt;/a&gt; 已经过去一年半了，重新看了一遍以前写的内容，当时选择 obsidian 的优点，现在依然成立。&lt;/p&gt;
+        &lt;p&gt;用 obsidian 已经两年多了，距离我上次更新 &lt;a href=&#34;https://sspai.com/post/71249&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《如何用 obsidian 和 flomo 搭建知识体系》&lt;/a&gt; 已经过去一年半了，重新看了一遍以前写的内容，当时选择 obsidian 的优点，现在依然成立。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;特别是第一点，通用 md 形式这个优点对我来说更重要了，但是里面的使用案例基本上都失效了，不再和 flomo 联用。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;以前旧版 flomo 还没下架的时候，我还写过 flomo 下载成 md 的脚本，现在这些 flomo 文件也被我从 obsidian 里面移除了。大概率我不会换最终笔记软件了，哪怕 obsidian 是很方便跑路的。&lt;/p&gt;
 &lt;h3 id=&#34;以前没有-all-in-one-obsidian-的原因&#34;&gt;
@@ -356,7 +356,7 @@
     &lt;/a&gt;
     
 &lt;/h4&gt;
-&lt;p&gt;现在我 obsidian 里标题命名法应该算常青笔记里的&lt;strong&gt;原子化原则&lt;/strong&gt;吧，对于常青笔记的概念可以参考少楠这篇 &lt;a href=&#34;https://pmthinking.notion.site/EvergreenNotes-0a3f82b22a654eb18ccf3e83854ec1ba&#34;&gt;《何谓常青笔记（EvergreenNotes）》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;现在我 obsidian 里标题命名法应该算常青笔记里的&lt;strong&gt;原子化原则&lt;/strong&gt;吧，对于常青笔记的概念可以参考少楠这篇 &lt;a href=&#34;https://pmthinking.notion.site/EvergreenNotes-0a3f82b22a654eb18ccf3e83854ec1ba&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《何谓常青笔记（EvergreenNotes）》&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ryooo 的 kg 笔记法&lt;/strong&gt;也一定程度有点相似，但是我的命名没有那么严格的按概念笔记、实体笔记和关系笔记去分类，而且我认为很多概念和实体笔记是没有必要刻意手动用自己的话写出来的，一定程度上不认同 flomo 提倡的用自己的话做笔记。&lt;/p&gt;
 &lt;p&gt;因为概念和实体实在是太多了，&lt;mark&gt;如果你真的理解了这个概念，不用记下来，没有理解的话，用自己的话记录也是欺骗自己。&lt;/mark&gt;当然我这里特指的是概念笔记，比如什么是常青笔记这些，我最近大量删除了很多这类笔记。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -365,7 +365,7 @@
 但是我还是觉得记笔记是有好处的，只是形式和以前不一样了，比起大段大段的复制粘贴，更重要的是关键词，自己遇到的问题，下次再遇到的时候需要用什么关键词快速找到答案，建立起一个个锚点。&lt;/p&gt;
 &lt;p&gt;所以搜索技能和知识管理软件的搜索体验真的无比重要了。&lt;br&gt;
 &lt;br&gt;&lt;br&gt;
-&lt;a href=&#34;http://seyee.co/post/learning/#WCREFX-1007327&#34;&gt;《什么才是真正学会了？ | Seyee&amp;amp;rsquo;s Blog》&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://seyee.co/post/learning/#WCREFX-1007327&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《什么才是真正学会了？ | Seyee&amp;rsquo;s Blog》&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;那么在自己完全理解某个概念前和问题前，应该怎么办呢？完全放任不管也不行，时间长了也想不起来看过的资料。&lt;/p&gt;
 &lt;p&gt;我使用剪藏类的工具也有很长时间的历史了，从最初的印象笔记全文剪藏，到 cubox 的全文剪藏基础上再划线，再到现在的五彩划线，发现收藏量级上去以后，想要找到自己看过的某个文章的内容是很难的，而且大部分的划线，更多的是在那一刻的认同，不一定对自己是真的有实际意义的。&lt;/p&gt;
@@ -419,7 +419,7 @@ file:&amp;#34;moc&amp;#34; -搜索
     <description>
         &lt;blockquote&gt;
 &lt;p&gt;MacOS 也可以下载 Clash for Windows， ClashX 没有这个功能&lt;br&gt;
-Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/releases&#34;&gt;https://github.com/Fndroid/clash_for_windows_pkg/releases&lt;/a&gt;&lt;/p&gt;
+Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/Fndroid/clash_for_windows_pkg/releases&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;为什么需要使用配置文件预处理&#34;&gt;
     &lt;a href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e4%bd%bf%e7%94%a8%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e9%a2%84%e5%a4%84%e7%90%86&#34; class=&#34;anchor_txt&#34;&gt;
@@ -540,8 +540,8 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
     
 &lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://chenjuefei.com:444/117.html&#34;&gt;Clash使用Parser添加自定义规则并防止更新覆盖 - 觉今是而昨非 - Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codein.icu/clashtutorial/&#34;&gt;Clash 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chenjuefei.com:444/117.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clash使用Parser添加自定义规则并防止更新覆盖 - 觉今是而昨非 - Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codein.icu/clashtutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clash 教程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
     </description>
@@ -554,8 +554,8 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
     
     <guid>/post/link2023-08-15/</guid>
     <description>
-        &lt;p&gt;&lt;a href=&#34;http://seyee.co/post/why_blog/&#34;&gt;《为什么写博客》&lt;/a&gt; 写到，有时候逛到有意思的博客会自己也想做。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.owenyoung.com&#34;&gt;https://www.owenyoung.com&lt;/a&gt; 就是其一，参考他里面的各种链接，我也想弄一个系列用来放自己近期看过的好玩的东西。&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;http://seyee.co/post/why_blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《为什么写博客》&lt;/a&gt; 写到，有时候逛到有意思的博客会自己也想做。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.owenyoung.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.owenyoung.com&lt;/a&gt; 就是其一，参考他里面的各种链接，我也想弄一个系列用来放自己近期看过的好玩的东西。&lt;/p&gt;
 &lt;p&gt;那么推荐的第一个链接就是这个博客。博主是最近很火的一款沉浸式翻译的作者。&lt;/p&gt;
 
     </description>
@@ -575,7 +575,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;所谓的前置引用，就是一个在后面才能深入理解的概念竟然在此之前已经被引用了，导致的结果是学习者总是处于懵懂的状态。学校里的知识却不是这样的，学校里的知识总是线性层层递进的，理解了前面，就能理解后面…… 关于 “前置引用”，你可以参阅我在《自学是门手艺》里的阐述。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://blockchainlittlebook.com/#/&#34;&gt;https://blockchainlittlebook.com/#/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blockchainlittlebook.com/#/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blockchainlittlebook.com/#/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;笔记里就记下了让 GPT 给我解释的几个命令，主要是用来下次不记得这个单词了可以快速找到。&lt;/p&gt;
 &lt;p&gt;笔记圈里特别爱讨论的一个问题就是为什么要做笔记？其实现在回顾确实很多笔记是在骗自己，如果当时没有理解记下来的东西，事后也不会想起来自己记过这个东西。而真正理解了，好像也没有记下来的必要了，这算不算是一个笔记的悖论。&lt;/p&gt;
@@ -672,7 +672,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
     &lt;/a&gt;
     
 &lt;/h3&gt;
-&lt;p&gt;这部分请查看 未修改版：如何在网页上划线和批注？推荐五彩插件 -  &lt;a href=&#34;https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w&#34;&gt;https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这部分请查看 未修改版：如何在网页上划线和批注？推荐五彩插件 -  &lt;a href=&#34;https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mp.weixin.qq.com/s/NkS6v9xLX5hSMrSrsDcG2w&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;对知识管理的新体会&#34;&gt;
     &lt;a href=&#34;#%e5%af%b9%e7%9f%a5%e8%af%86%e7%ae%a1%e7%90%86%e7%9a%84%e6%96%b0%e4%bd%93%e4%bc%9a&#34; class=&#34;anchor_txt&#34;&gt;
         对知识管理的新体会
@@ -685,7 +685,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
     &lt;/a&gt;
     
 &lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;http://mp.weixin.qq.com/s?__biz=MzAxMzIyNjgyOQ==&amp;amp;mid=2488505366&amp;amp;idx=1&amp;amp;sn=769d48b1993c37a2ed27e321bb307b7c&amp;amp;chksm=8a02f234bd757b2260b3234609ad30198b2c46096ed6b222cb50a6dd836b125b57d57b98e29b&amp;amp;scene=21#wechat_redirect&#34;&gt;上篇文章&lt;/a&gt;里提到一个操作是我会定期把 cubox 里保存的链接全盘复制到 workflowy ，后来我把这些链接都删掉了，这些只有标题的链接会造成搜索关键词的时候有很多干扰信息，时间长了是很难记得里面的内容是什么的。所以现在只有用五彩划过线的链接，才同步到 workflowy 。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mp.weixin.qq.com/s?__biz=MzAxMzIyNjgyOQ==&amp;amp;mid=2488505366&amp;amp;idx=1&amp;amp;sn=769d48b1993c37a2ed27e321bb307b7c&amp;amp;chksm=8a02f234bd757b2260b3234609ad30198b2c46096ed6b222cb50a6dd836b125b57d57b98e29b&amp;amp;scene=21#wechat_redirect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;上篇文章&lt;/a&gt;里提到一个操作是我会定期把 cubox 里保存的链接全盘复制到 workflowy ，后来我把这些链接都删掉了，这些只有标题的链接会造成搜索关键词的时候有很多干扰信息，时间长了是很难记得里面的内容是什么的。所以现在只有用五彩划过线的链接，才同步到 workflowy 。&lt;/p&gt;
 &lt;h4 id=&#34;2&#34;&gt;
     &lt;a href=&#34;#2&#34; class=&#34;anchor_txt&#34;&gt;
         2.
@@ -708,7 +708,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
      /&gt;&lt;/p&gt;
 &lt;p&gt;虽然以前看过存过很多冥想的资料，当有一天跟朋友说起我对冥想感兴趣的时候，他问我什么是冥想，为什么年轻人要做冥想，我一时语塞，发现竟然不太能准确的回答出这个问题。当我写下了这两条提问并且稍微整理了一下自己的理解后，在脑袋里想到冥想这个词具体了很多，可能自问自答能起到聚焦核心的作用。&lt;/p&gt;
 &lt;img src=&#34;https://cdn.sspai.com/2023/04/24/article/6e4ef245ca1cf943470f2e8c7e53fc4d&#34; alt=&#34;img&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;p&gt;上图来源&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzU2NDI1Mzg2NQ==&amp;amp;mid=2247489662&amp;amp;idx=1&amp;amp;sn=068849800bebec8bdab7c745f675449c&amp;amp;chksm=fc4c9db8cb3b14aecf20fc08f78ecef89d7a534f4f6c94793da221f5f9b8fa78798a70b4e9d2&amp;amp;mpshare=1&amp;amp;scene=21&amp;amp;srcid=1013z9l4cwMusKjqUsP4ud3O&amp;amp;sharer_sharetime=1634171395336&amp;amp;sharer_shareid=d8368151a859b982687d48d22f62fd55#wechat_redirect&#34;&gt;《用“卡片笔记写作法”读《卡片笔记写作法》 译者现身说法并完整示范 | 学习骇客》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上图来源&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzU2NDI1Mzg2NQ==&amp;amp;mid=2247489662&amp;amp;idx=1&amp;amp;sn=068849800bebec8bdab7c745f675449c&amp;amp;chksm=fc4c9db8cb3b14aecf20fc08f78ecef89d7a534f4f6c94793da221f5f9b8fa78798a70b4e9d2&amp;amp;mpshare=1&amp;amp;scene=21&amp;amp;srcid=1013z9l4cwMusKjqUsP4ud3O&amp;amp;sharer_sharetime=1634171395336&amp;amp;sharer_shareid=d8368151a859b982687d48d22f62fd55#wechat_redirect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《用“卡片笔记写作法”读《卡片笔记写作法》 译者现身说法并完整示范 | 学习骇客》&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;为什么需要保存前面那种「冥想 OR 正念 OR 觉知」文本？一方面是选中这行字，按一下 workflowy 的全局搜索快捷键，立刻就能看到搜索结果，而不用手动去搜索输入框输这么长一串，后续也可以继续维护这个搜索条件。（在 workflowy 里搜索「冥想 OR 正念 OR 觉知」表示查找包含这三个词任意一个的文本）&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; 
     src=&#34;https://cdn.sspai.com/2023/04/24/article/d4d6af0d1eb6a961ee6a9508f610397c&#34; 
@@ -775,7 +775,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
 &lt;blockquote&gt;
 &lt;p&gt;整理究竟是目的，还是路径？&lt;/p&gt;
 &lt;p&gt;任何一个好的系统都不应该耗费你大量的时间去维护，一旦你需要不断地「定期」维护一个系统，那么就违背了系统的初衷 —— 整理东西本身并不能产生太大的价值，除了耗费时间。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/42rDxI2qIz3t7llP-GA_Yw&#34;&gt;《flomo weekly vol.28：我们真的需要整理标签么？》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/42rDxI2qIz3t7llP-GA_Yw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《flomo weekly vol.28：我们真的需要整理标签么？》&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如果你看了这段话觉得 workflowy 平平无奇，没有什么特别的，下面再分享一下我的用法。&lt;/p&gt;
 &lt;h4 id=&#34;我的用法&#34;&gt;
@@ -828,7 +828,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;除了 cubox 链接、我的书签、五彩高亮等收藏链接的分类节点，我还会建立一个星标文章的节点，用来放优质的文章，这样展示搜索结果的时候可以和其他链接区分开，相当于加了一个权重，类似于 cubox 里的星标，也可以用 &lt;code&gt;#星标文章&lt;/code&gt; 的标签维护。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8&#34;&gt;https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cdn.sspai.com/2023/02/20/article/8eec6a1dcff90becaae30ad179ced0b8&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;维护一个自己的关键词列表&#34;&gt;
     &lt;a href=&#34;#%e7%bb%b4%e6%8a%a4%e4%b8%80%e4%b8%aa%e8%87%aa%e5%b7%b1%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e5%88%97%e8%a1%a8&#34; class=&#34;anchor_txt&#34;&gt;
         维护一个自己的关键词列表
@@ -843,7 +843,7 @@ Mac 下载链接 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pk
 &lt;p&gt;不像使用标签分类需要手动给内容添加上一个个标签，我在 workflowy 建立一个关键词列表，把某个领域下的词都放到一起，关键词本身就是线索，每个节点都可以无限嵌套展开，不过我打算尽量不超过三级。搜索「渐进式总结」，可以看到所有包含「渐进式总结」的节点，并且搜索结果的节点和编辑时一样可以自由拖拽，在搜索的同时也可以随手进行整理。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;文字本身就是自己最好的标签系统。我认为我们应该把重点放在浮出已经在那里找到的关键词上，而不是标签。因为这里有一个问题：即使你用标签找到这个笔记，你仍然需要快速评估它的相关性。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.notion.so/II-f0aac2738a484715b62c19e7f8a7c7a9?pvs=21&#34;&gt;《渐进式总结 II：例子和比喻》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.notion.so/II-f0aac2738a484715b62c19e7f8a7c7a9?pvs=21&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《渐进式总结 II：例子和比喻》&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; 
     src=&#34;https://cdn.sspai.com/2023/02/19/c0e744fd801ac4a2ceaa29b9140a860e.png&#34; 
