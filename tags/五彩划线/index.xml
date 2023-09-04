@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>五彩划线 on Seyee&#39;s Blog</title>
+    <link>/tags/%E4%BA%94%E5%BD%A9%E5%88%92%E7%BA%BF/</link>
+    <description>Recent content in 五彩划线 on Seyee&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E4%BA%94%E5%BD%A9%E5%88%92%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</title>
+      <link>/post/wucai_template/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/wucai_template/</guid>
+      <description>因为 obsidian 1.4.5 版本更新的 property 功能，把五彩的模板也一起更新了一下。 （全部代码在最后可复制） 结合 property 后的模板有什么优势 主要就是颜值上的提升，比如这是一张我</description>
+    </item>
+    
+    <item>
+      <title>如何在网页上划线和批注？推荐五彩插件</title>
+      <link>/post/wucai/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/wucai/</guid>
+      <description>什么是网页高亮工具 先解释一下五彩插件解决的场景，它可以直接在原网页上标注划线做笔记，严格意义上的同类产品是 hypothesis、diigo 等</description>
+    </item>
+    
+  </channel>
+</rss>
