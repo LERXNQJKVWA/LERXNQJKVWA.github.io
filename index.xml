@@ -115,7 +115,7 @@
 &lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;{% if trimtags %}tags: {{trimtags | replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)}}{% endif %}&lt;/code&gt; 进行了判断是否有 tags，不生成空的属性。&lt;code&gt;| replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)&lt;/code&gt; 是因为对默认的星标名称做了替换，改成五彩星标。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pagenote: |- {{pagenote|replace(r/\n/g, &amp;quot;\n  &amp;quot;)}}{% endif %}&lt;/code&gt;，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pagenote: |- {{pagenote|replace(r/\n/g, &amp;quot;\n  &amp;quot;)}}{% endif %}&lt;/code&gt;，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。&lt;/li&gt;
 &lt;li&gt;官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 &lt;code&gt;css snippet&lt;/code&gt; 全部显示，代码也放到后面。怎么使用 snippet 可以参考 &lt;a href=&#34;https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obsidian 的 CSS 代码片段&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;全部代码&#34;&gt;
