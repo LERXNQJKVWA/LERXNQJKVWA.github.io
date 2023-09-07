@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些有意思的博客</title>
+      <link>/post/blog_list/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_list/</guid>
+      <description>今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。 2023-09-07 Now • Cory Dransfeldt 2023-08-31 Maeiee 数字花园 2023-08-15 Owen的博客 2023-02-07 向宗亮 2023-01-30 Limboy 关注时间和</description>
+    </item>
+    
     <item>
       <title>workflowy 自定义 css</title>
       <link>/post/workflowy_style/</link>
@@ -23,15 +32,6 @@
       
       <guid>/post/wucai_template/</guid>
       <description>因为 obsidian 1.4.5 版本更新的 property 功能，把五彩的模板也一起更新了一下。 （全部代码在最后可复制） 结合 property 后的模板有什么优势 主要就是颜值上的提升，比如这是一张我</description>
-    </item>
-    
-    <item>
-      <title>一些有意思的博客</title>
-      <link>/post/blog_list/</link>
-      <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/post/blog_list/</guid>
-      <description>今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。 2023-08-31 Maeiee 数字花园 2023-08-15 Owen的博客 2023-02-07 向宗亮 2023-01-30 Pseudoyu 关注有一段时间了，写</description>
     </item>
     
     <item>

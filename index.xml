@@ -5,7 +5,27 @@
     <description>Recent content on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>一些有意思的博客</title>
+    <link>/post/blog_list/</link>
+    <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+    
+    <guid>/post/blog_list/</guid>
+    <description>
+        &lt;p&gt;今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2023-09-07 &lt;a href=&#34;https://coryd.dev/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Now • Cory Dransfeldt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-08-31 &lt;a href=&#34;https://maeiee-garden.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maeiee 数字花园&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-08-15 &lt;a href=&#34;https://www.owenyoung.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Owen的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-02-07 &lt;a href=&#34;http://xiangzongliang.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;向宗亮&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2023-01-30 &lt;a href=&#34;https://limboy.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Limboy&lt;/a&gt;  关注时间和 pseudoyu 应该差不多&lt;/li&gt;
+&lt;li&gt;2023-01-30 &lt;a href=&#34;https://www.pseudoyu.com/zh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pseudoyu&lt;/a&gt;  关注有一段时间了，写了一个以前有记录的时间&lt;/li&gt;
+&lt;/ul&gt;
+
+    </description>
+    </item>
+    
     <item>
     <title>workflowy 自定义 css</title>
     <link>/post/workflowy_style/</link>
@@ -209,24 +229,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-    </description>
-    </item>
-    
-    <item>
-    <title>一些有意思的博客</title>
-    <link>/post/blog_list/</link>
-    <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-    
-    <guid>/post/blog_list/</guid>
-    <description>
-        &lt;p&gt;今天又看到一个有意思的博客，想到上次的一些链接里也是推荐博客，索性就列个清单吧。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2023-08-31 &lt;a href=&#34;https://maeiee-garden.vercel.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maeiee 数字花园&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2023-08-15 &lt;a href=&#34;https://www.owenyoung.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Owen的博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2023-02-07 &lt;a href=&#34;http://xiangzongliang.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;向宗亮&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2023-01-30 &lt;a href=&#34;https://www.pseudoyu.com/zh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pseudoyu&lt;/a&gt;  关注有一段时间了，写了一个以前有记录的时间&lt;/li&gt;
-&lt;/ul&gt;
-
     </description>
     </item>
     
