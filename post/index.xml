@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>workflowy图片视频播客预览及一些感想</title>
+      <link>/post/workflowy_embed/</link>
+      <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/workflowy_embed/</guid>
+      <description>以前把 workflowy 几乎当纯文本用，哪怕付费会员可以不限制图片容量，官方自带的图片体验还是有一点点不好，因为 workflowy 服务器在国外，图片加载速度慢，有时候还会裂</description>
+    </item>
+    
     <item>
       <title>一些有意思的博客</title>
       <link>/post/blog_list/</link>
