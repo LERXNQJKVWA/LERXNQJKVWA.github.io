@@ -102,7 +102,7 @@
                                 <time>
                                     | updated 2023-09-08
                                     </time>
-                                | 683 words 
+                                | 804 words 
                                 | 2 minutes 
                             </div>
                         
@@ -149,6 +149,8 @@
 <li><code>pagenote: |- {{pagenote|replace(r/\n/g, &quot;\n  &quot;)}}{% endif %}</code>，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。</li>
 <li><code>|replace(&quot;#五彩小助手&quot;, &quot;&quot;)</code>因为 trimtags 做了更新，会把 pagenote 里的标签加进去，所以 pagenote 去掉 <code>#五彩小助手</code></li>
 <li>官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 <code>css snippet</code> 全部显示，代码也放到后面。怎么使用 snippet 可以参考 <a href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" target="_blank" rel="noopener">Obsidian 的 CSS 代码片段</a></li>
+<li><code>{% if isdailynote == false %}全文剪藏: {{ispagemirror}}{% endif %}</code> 因为 dailyNote 本身就不会有剪藏，所以我不想加这个字段，这样的用 obsidian 的 property 搜索时，可以过滤出真正没有剪藏的内容，方便偶尔看看有哪些网页需要我进去全文剪藏一下</li>
+<li>这些用 <code>if</code> 包裹了的代码中间的空行不能删，删除了会导致 obsidian 里同步的 yaml 格式异常</li>
 </ol>
 <h3 id="全部代码">
     <a href="#%e5%85%a8%e9%83%a8%e4%bb%a3%e7%a0%81" class="anchor_txt">
