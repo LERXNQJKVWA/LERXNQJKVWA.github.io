@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="dark" />
   
-  <title>我的五彩同步 obsidian 模板 — 结合更新的 property 功能 | Seyee&#39;s Blog</title>
+  <title>我的五彩同步 obsidian 模板 | 2023-09-25 更新 | Seyee&#39;s Blog</title>
   <meta name="keywords" content="Seyee,blog,博客,obsidian,workflowy" />
-  <meta content=" - " property="og:description">
+  <meta content=" - 我的五彩同步 obsidian 模板，因为 obsidian 1.4.5 版本更新的 property 功能，把五彩的模板也一起更新了一下" property="og:description">
   <meta name="author" content="Seyee" />
   
-     
-  <meta content="我的五彩同步 obsidian 模板 — 结合更新的 property 功能 - Seyee&#39;s Blog" property="og:title">
+     <meta name="keywords" content="obsidian, 五彩划线, 模版">  
+  <meta content="我的五彩同步 obsidian 模板 | 2023-09-25 更新 - Seyee&#39;s Blog" property="og:title">
   
   
   
@@ -89,7 +89,7 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</h1>
+                    <h1>我的五彩同步 obsidian 模板 | 2023-09-25 更新</h1>
                     <div class="post-meta">
                         
                             
@@ -102,7 +102,7 @@
                                 <time>
                                     | updated 2023-09-08
                                     </time>
-                                | 653 words 
+                                | 683 words 
                                 | 2 minutes 
                             </div>
                         
@@ -146,7 +146,7 @@
 </h3>
 <ol>
 <li><code>{% if trimtags %}tags: {{trimtags | replace(&quot;星标&quot;, &quot;五彩星标&quot;)}}{% endif %}</code> 进行了判断是否有 tags，不生成空的属性。<code>| replace(&quot;星标&quot;, &quot;五彩星标&quot;)</code> 是因为对默认的星标名称做了替换，改成五彩星标。</li>
-<li><code>pagenote: |- {{pagenote|replace(r/\n/g, &quot;\n  &quot;)}}{% endif %}</code>，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。</li>
+<li><code>pagenote: |- {{pagenote|replace(r/\n/g, &quot;\n  &quot;)}}{% endif %}</code>，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。</li>
 <li><code>|replace(&quot;#五彩小助手&quot;, &quot;&quot;)</code>因为 trimtags 做了更新，会把 pagenote 里的标签加进去，所以 pagenote 去掉 <code>#五彩小助手</code></li>
 <li>官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 <code>css snippet</code> 全部显示，代码也放到后面。怎么使用 snippet 可以参考 <a href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" target="_blank" rel="noopener">Obsidian 的 CSS 代码片段</a></li>
 </ol>
@@ -186,6 +186,8 @@
 </span><span class="lnt">20
 </span><span class="lnt">21
 </span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">---
@@ -194,7 +196,9 @@
 </span></span><span class="line"><span class="cl">创建时间: <span class="o">{{</span>createat<span class="o">}}</span>
 </span></span><span class="line"><span class="cl">更新时间: <span class="o">{{</span>updateat<span class="o">}}</span>
 </span></span><span class="line"><span class="cl">highlightcount: <span class="o">{{</span>highlightcount<span class="o">}}</span>
-</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> trimtags %<span class="o">}</span>tags: <span class="o">{{</span>trimtags <span class="p">|</span> replace<span class="o">(</span><span class="s2">&#34;星标&#34;</span>, <span class="s2">&#34;五彩星标&#34;</span><span class="o">)}}{</span>% endif %<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> <span class="nv">isdailynote</span> <span class="o">==</span> <span class="nb">false</span> %<span class="o">}</span>全文剪藏: <span class="o">{{</span>ispagemirror<span class="o">}}{</span>% endif %<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> trimtags %<span class="o">}</span>tags: <span class="o">{{</span>tags <span class="p">|</span> replace<span class="o">(</span><span class="s2">&#34;#&#34;</span>, <span class="s2">&#34;&#34;</span><span class="o">)</span> <span class="p">|</span> replace<span class="o">(</span><span class="s2">&#34;星标&#34;</span>, <span class="s2">&#34;五彩星标&#34;</span><span class="o">)}}{</span>% endif %<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">{</span>% <span class="k">if</span> pagenote<span class="p">|</span>replace<span class="o">(</span>r/<span class="se">\n</span>/g, <span class="s2">&#34;\n  &#34;</span><span class="o">)</span><span class="p">|</span>replace<span class="o">(</span><span class="s2">&#34;#五彩小助手&#34;</span>, <span class="s2">&#34;&#34;</span><span class="o">)</span><span class="p">|</span> trim  %<span class="o">}</span>pagenote: <span class="p">|</span>-
 </span></span><span class="line"><span class="cl">  <span class="o">{{</span>pagenote<span class="p">|</span>replace<span class="o">(</span>r/<span class="se">\n</span>/g, <span class="s2">&#34;\n  &#34;</span><span class="o">)</span><span class="p">|</span>replace<span class="o">(</span><span class="s2">&#34;#五彩小助手&#34;</span>, <span class="s2">&#34;&#34;</span><span class="o">)}}{</span>% endif %<span class="o">}</span>
@@ -232,7 +236,16 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><h3 id="changelog">
+    <a href="#changelog" class="anchor_txt">
+        ChangeLog
+    </a>
+    
+</h3>
+<ul>
+<li>2023-09-25 添加全文剪藏字段</li>
+</ul>
+
     </div>
     
 </div>
@@ -311,10 +324,15 @@
         显示全部 property 的 snippet 片段
     </a>
     
-</h4>
+</h4></li></ul>
                 </li>
-            </ul>
-            </li>
+                <li><h3 id="changelog">
+    <a href="#changelog" class="anchor_txt">
+        ChangeLog
+    </a>
+    
+</h3>
+                </li>
             </ul>
         </div>
         </details>
@@ -393,7 +411,7 @@
 
         
     </section>
-    <script defer src="/ts/features.dd8e5b18a6dda91367e396fd8dc9b9f83a1993065f709a53e056e0f2e9096ea1.js" 
+    <script defer src="/ts/features.706a523ba43e6d0427c7fdf2b9d05dbd0920d3f12942b453690b495cb2522743.js" 
     data-enable-footnotes="true"
     ></script>
 </footer>

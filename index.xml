@@ -206,7 +206,7 @@ Workflowy 图片视频播客预览 Image Preview, Embed &amp;amp; Extend &lt;a h
     </item>
     
     <item>
-    <title>我的五彩同步 obsidian 模板 — 结合更新的 property 功能</title>
+    <title>我的五彩同步 obsidian 模板 | 2023-09-25 更新</title>
     <link>/post/wucai_template/</link>
     <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
     
@@ -237,7 +237,7 @@ Workflowy 图片视频播客预览 Image Preview, Embed &amp;amp; Extend &lt;a h
 &lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;{% if trimtags %}tags: {{trimtags | replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)}}{% endif %}&lt;/code&gt; 进行了判断是否有 tags，不生成空的属性。&lt;code&gt;| replace(&amp;quot;星标&amp;quot;, &amp;quot;五彩星标&amp;quot;)&lt;/code&gt; 是因为对默认的星标名称做了替换，改成五彩星标。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pagenote: |- {{pagenote|replace(r/\n/g, &amp;quot;\n  &amp;quot;)}}{% endif %}&lt;/code&gt;，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pagenote: |- {{pagenote|replace(r/\n/g, &amp;quot;\n  &amp;quot;)}}{% endif %}&lt;/code&gt;，是因为如果页面笔记 pagenote 原本有回车的话，不处理直接渲染会造成样式异常。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;|replace(&amp;quot;#五彩小助手&amp;quot;, &amp;quot;&amp;quot;)&lt;/code&gt;因为 trimtags 做了更新，会把 pagenote 里的标签加进去，所以 pagenote 去掉 &lt;code&gt;#五彩小助手&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;官方样式会设置 property 的高度，如果文本行数比较多就会隐藏，可以用 &lt;code&gt;css snippet&lt;/code&gt; 全部显示，代码也放到后面。怎么使用 snippet 可以参考 &lt;a href=&#34;https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/obsidian%E7%9A%84css%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obsidian 的 CSS 代码片段&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -277,6 +277,8 @@ Workflowy 图片视频播客预览 Image Preview, Embed &amp;amp; Extend &lt;a h
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
@@ -285,7 +287,9 @@ Workflowy 图片视频播客预览 Image Preview, Embed &amp;amp; Extend &lt;a h
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;创建时间: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;createat&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;更新时间: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;updateat&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;highlightcount: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;highlightcount&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; trimtags %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;tags: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;trimtags &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;星标&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;五彩星标&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;isdailynote&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt; %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;全文剪藏: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;ispagemirror&lt;span class=&#34;o&#34;&gt;}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; trimtags %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;tags: &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;tags &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;星标&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;五彩星标&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;% &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; pagenote&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;r/&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;/g, &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n  &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#五彩小助手&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; trim  %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;pagenote: &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;-
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;pagenote&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;r/&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;/g, &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n  &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;replace&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#五彩小助手&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)}}{&lt;/span&gt;% endif %&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
@@ -323,7 +327,16 @@ Workflowy 图片视频播客预览 Image Preview, Embed &amp;amp; Extend &lt;a h
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;changelog&#34;&gt;
+    &lt;a href=&#34;#changelog&#34; class=&#34;anchor_txt&#34;&gt;
+        ChangeLog
+    &lt;/a&gt;
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2023-09-25 添加全文剪藏字段&lt;/li&gt;
+&lt;/ul&gt;
+
     </description>
     </item>
     
