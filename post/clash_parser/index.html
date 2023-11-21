@@ -268,13 +268,20 @@ Mac 下载链接 <a href="https://github.com/Fndroid/clash_for_windows_pkg/relea
  
 <div class="container">
     
-    <script src="https://cdn.jsdelivr.net/npm/@waline/client@latest"></script>
+    <script src="https://unpkg.com/@waline/client@3.0.0-alpha.2/dist/waline.js"></script>
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+
 <div id="waline"></div>
 
-<script>
-  Waline({
-      el: '#waline',
-      serverURL: 'https:\/\/comment.seyee.co\/',
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    serverURL: 'https:\/\/comment.seyee.co\/',
       placeholder: '不想买服务器，请开魔法翻墙评论~',
       meta: ["nick","mail"]
   });
