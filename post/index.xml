@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>等待来年春天吧，2023再见</title>
+      <link>/post/year2023/</link>
+      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/year2023/</guid>
+      <description>本来标题打算就和去年的一样，写成《一年一度，2023》，但是放到博客里看所有的年终总结时，一水的重复字段看得有点审美疲劳，就改了。这个系列都</description>
+    </item>
+    
     <item>
       <title>workflowy图片视频播客预览及一些感想</title>
       <link>/post/workflowy_embed/</link>
@@ -113,6 +122,15 @@
       
       <guid>/post/workflowy/</guid>
       <description>可能很多人都没听过 workflowy，它是一款大纲笔记软件，已经有十几年的历史了，好用的东西不能我一个人知道，所以写一篇自来水文章安利。 2023-09-04 更</description>
+    </item>
+    
+    <item>
+      <title>一年一度，2022</title>
+      <link>/post/year2022/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/year2022/</guid>
+      <description>没想到 2022 就这样在咳咳咳中结束了，趁身体好点了，坐在电脑前写写今年的总结，保持每年的仪式感。 我的工具流 笔记：flomo + obsidian（移动</description>
     </item>
     
     <item>
