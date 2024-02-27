@@ -6,11 +6,20 @@
     <description>Recent content in Posts on Seyee&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记账模版 | Excel 懒人记账，一个月记一次</title>
+      <link>/post/cost_excel/</link>
+      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cost_excel/</guid>
+      <description>我的记账形式变化 我的记账历史有 12 年了，最初是用随手记 App 的，从 2012 年用到 2019 年，后来发现网易有钱可以直接同步各个银行卡账单，就换了 App。结果没过</description>
+    </item>
+    
     <item>
       <title>等待来年春天吧，2023再见</title>
       <link>/post/year2023/</link>
-      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>/post/year2023/</guid>
       <description>本来标题打算就和去年的一样，写成《一年一度，2023》，但是放到博客里看所有的年终总结时，一水的重复字段看得有点审美疲劳，就改了。这个系列都</description>

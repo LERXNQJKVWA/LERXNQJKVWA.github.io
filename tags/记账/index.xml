@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>记账 on Seyee&#39;s Blog</title>
+    <link>/tags/%E8%AE%B0%E8%B4%A6/</link>
+    <description>Recent content in 记账 on Seyee&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%AE%B0%E8%B4%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记账模版 | Excel 懒人记账，一个月记一次</title>
+      <link>/post/cost_excel/</link>
+      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cost_excel/</guid>
+      <description>我的记账形式变化 我的记账历史有 12 年了，最初是用随手记 App 的，从 2012 年用到 2019 年，后来发现网易有钱可以直接同步各个银行卡账单，就换了 App。结果没过</description>
+    </item>
+    
+  </channel>
+</rss>
